@@ -1,0 +1,156 @@
+
+/*---------------------------header-----------------------------*/
+#header {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 25px;
+}
+
+.menu {
+    text-decoration: none;
+    display: none;
+}
+
+
+#logo {
+    position: absolute;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 2px 2px;
+}
+
+/*--------------------------images----------------------------*/
+
+
+.mainImage1 {
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0px;
+    text-align: center;
+    max-height: 1600px;
+    background-color: #272727;
+}
+
+
+
+img {
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+
+
+
+/*---------------------------   form     ------------------------------*/
+.formContainer {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498966/masterFood/formTransportista.jpg);
+    max-width: 1300px;
+    height: 730px;
+    background-size: cover;
+    margin: 80px 0px 0px 100px;
+    border-radius: 20px;
+}
+
+.form {
+    height: 690px;
+    position: absolute;
+    background-color: #fff;
+    margin: 20px 0px 0px 720px;
+    border-radius: 10px;
+}
+
+#textDecoForm {
+    color: #fff;
+    text-shadow: 4px 4px 3px #272727;
+    margin-top: 37%;
+    margin-left: 26%;
+    font-size: 60px;
+    text-align: right;
+    position: absolute;
+}
+
+#encabezadoForm {
+    padding-top: 20px;
+    font-family: "Roboto";
+    font-size: 30px;
+}
+
+
+#btnRegistrar {
+    width: 200px;
+}
+
+
+
+.left-frm, .right-frm {
+    display: inline-block;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: left;
+    font-family: "Roboto";
+    font-size: 13px
+}
+
+.right-frm {
+    margin-right: 50px;
+    margin-top: -15px;
+    margin-bottom: 70px;
+}
+/*--------------------------texto sobre imagen----------------------------*/
+
+li {
+    float: left;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #f5f0ed;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+/*--------------------------secciones----------------------------*/
+
+
+.imgInstrucciones {
+    position: absolute;
+    max-width: 350px;
+    max-height: 350px;
+    margin-left: -140px;
+}
+
+.infoImg {
+    max-width: 600px;
+    display: inline-block;
+    text-align: center;
+    margin: 80px 200px;
+}
+
+
+.Instruciones {
+    position: absolute;
+    color: #fff;
+    margin-top: 20%;
+    text-shadow: 2px 2px 3px #272727;
+    margin-left: -130px;
+}
+
+
+/*------------------formularios------------------*/
+
+#txtMapa {
+    display: none;
+    visibility: hidden;
+}
+
+#txtRol, #txtCodigoAsignado, #txtCodigoVerificacion, #txtMin,
+#txtIdUsuarioDoc, #txtIdUsuarioRest, #txtLicenciaConducir, #txtMinisterio {
+    display: none;
+    visibility: hidden;
+}

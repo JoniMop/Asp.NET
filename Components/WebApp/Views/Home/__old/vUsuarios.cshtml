@@ -1,0 +1,50 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vUsuarios.js"></script>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.CtrlTable(viewName: "vUsuarios", id: "tblUsuarios", title: "Lista Usuarios",
+    columnsTitle: "Cedula,Nombre,Apellidos,Provincia,Canton,Distrito,Mapa,Telefono,Email, " +
+    "Contrasena,Rol,IdPaypal,CodigoAsignado,CodigoVerificacion",
+    ColumnsDataName: "Cedula,Nombre,Apellidos,Provincia,Canton,Distrito,Mapa,Telefono,Email," +
+    "Contrasena,Rol,IdPaypal,CodigoAsignado,CodigoVerificacion", 
+    onSelectFunction: "BindFields", colorHeader:"red")
+
+
+<div class="card border-secondary" style="margin-top: 50px;">
+    <div class="card-header">
+        <div class="row pull-right">
+            <div class="col-md-8">Editar Usuario</div>
+            <div class="col-md-4">
+                @Html.CtrlButton(viewName: "vUsuarios", id: "btnCreate", label: "Save", onClickFunction: "Create", buttonType:"success")
+                @Html.CtrlButton(viewName: "vUsuarios", id: "btnUpdate", label: "Save changes", onClickFunction: "Update", buttonType: "info")
+                @Html.CtrlButton(viewName: "vUsuarios", id: "btnDelete", label: "Delete", onClickFunction: "Delete",buttonType: "danger")
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bs-component">
+                    <form id="frmEdition">
+                        @Html.CtrlInput(id: "txtCedula", type: "text", label: "Cedula", columnDataName: "Cedula")
+                        @Html.CtrlInput(id: "txtNombre", type: "text", label: "Nombre", columnDataName: "Nombre")
+                        @Html.CtrlInput(id: "txtApellidos", type: "text", label: "Apellidos", columnDataName: "Apellidos")
+                        @Html.CtrlInput(id: "txtProvincia", type: "text", label: "Provincia", columnDataName: "Provincia")
+                        @Html.CtrlInput(id: "txtCanton", type: "text", label: "Canton", columnDataName: "Canton")
+                        @Html.CtrlInput(id: "txtDistrito", type: "text", label: "Distrito", columnDataName: "Distrito")
+                        @Html.CtrlInput(id: "txtMapa", type: "text", label: "Mapa", columnDataName: "Mapa")
+                        @Html.CtrlInput(id: "txtTelefono", type: "text", label: "Telefono", columnDataName: "Telefono")
+                        @Html.CtrlInput(id: "txtEmail", type: "email", label: "Email", columnDataName: "Email")
+                        @Html.CtrlInput(id: "txtContrasena", type: "password", label: "Contrasena", columnDataName: "Contrasena")
+                        @Html.CtrlInput(id: "txtRol", type: "text", label: "Rol", columnDataName: "Rol")
+                        @Html.CtrlInput(id: "txtIdPaypal", type: "email", label: "IdPaypal", columnDataName: "IdPaypal")
+                        @Html.CtrlInput(id: "txtCodigoAsignado", type: "text", label: "CodigoAsignado", columnDataName: "CodigoAsignado")
+                        @Html.CtrlInput(id: "txtCodigoVerif", type: "text", label: "CodigoVerificacion", columnDataName: "CodigoVerificacion")
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>

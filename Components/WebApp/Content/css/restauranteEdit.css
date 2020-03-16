@@ -1,0 +1,220 @@
+
+/*---------------------------header-----------------------------*/
+#header {
+    position: absolute;
+    margin-left: 67%;
+    margin-top: 25px;
+}
+
+.menu {
+    text-decoration: none;
+    display: none;
+}
+
+
+#logo {
+    position: absolute;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 2px 2px;
+}
+#BtnPagos {
+    margin: 0px 5px;
+}
+
+/*--------------------------images----------------------------*/
+
+
+.mainImage1 {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    max-height: 1000px;
+    background-color: #272727;
+    padding-bottom: 100px;
+}
+
+
+
+img {
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+
+
+/*--------------------------listas----------------------------*/
+
+li {
+    float: left;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #f5f0ed;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+/*--------------------------secciones----------------------------*/
+#profImg {
+    max-height: 600px;
+}
+
+.menuSeccion {
+    margin: 50px 400px;
+}
+
+#MenuContainer {
+    background-color: #F2B705;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+#MenuTitle {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    color: #fff;
+}
+
+#addProduct {
+    text-shadow: none;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+/*--------------------------cards productos----------------------------*/
+.cardProduct {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    max-height: 355px;
+    margin: 25px 15px;
+    margin-left: 40px;
+    text-align: center;
+    font-family: arial;
+    display: inline-block;
+    float: left;
+    padding: 10px 40px;
+}
+
+
+
+.prodImg {
+    min-width: 200px;
+    min-height: 180px;
+    max-width: 180px;
+}
+/*--------------------------modales----------------------------*/
+#logoModal, #logoModal2, #logoModal3 {
+    border-radius: 20px;
+    margin-left: 85px;
+    max-height: 100px;
+    max-width: 100px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#image_preview, #image_preview2 {
+    max-height: 140px;
+    max-width: 140px;
+    margin-top: -15px;
+}
+
+.modal-title, .modal-title2 {
+    font-family: "Roboto Condensed", sans-serif;
+    position: absolute;
+    margin: 120px 62px;
+    font-size: 22px
+}
+
+#actualizarProd {
+    margin: 120px 48px;
+    font-size: 22px
+}
+
+#btnSubirFoto {
+    float: right;
+    font-size: 13px;
+    margin-top: -80px;
+}
+
+.btn {
+    font-family: "Roboto Regular", sans-serif;
+    text-shadow: 2px 1px 3px #0b0b0b;
+}
+
+.up-frm, .lo-frm {
+    font-family: "Roboto";
+    font-size: 13px
+}
+
+
+#grayBackground {
+    min-height: 300px;
+    min-width: 300px;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+#tbPagos {
+    min-width: 400px;
+}
+
+#logoModal2 {
+    margin-left: 330px;
+}
+
+.modal-title2 {
+    margin: 120px 280px;
+}
+
+#btnPagoPaypal {
+}
+
+#tablaContainer2 {
+    margin: 0px 50px;
+}
+
+
+/*------------------formularios------------------*/
+
+#txtidRest, #txtImg, #txtidRest2, #txtImg2 {
+    display: none;
+    visibility: hidden;
+}
+
+#txtImg, #image_preview {
+    margin-top: -10px;
+}
+
+
+.cardbutton {
+    background-color: #28a745;
+    text-shadow: none;
+    font-size: 20px;
+    color: #fff;
+    width: 25%;
+    margin-left: 90%;
+    margin-top: -10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+    .cardbutton:hover {
+        background-color: #138913;
+    }
+
+
+#headingMenu {
+    background-color: #F2B705;
+}

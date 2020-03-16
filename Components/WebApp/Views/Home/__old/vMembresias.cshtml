@@ -1,0 +1,37 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vMembresias.js"></script>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.CtrlTable(viewName: "vMembresias", id: "tblMembresias", title: "Lista Membresias",
+    columnsTitle: "IdUsuario,MontoMembresiaAnual,Estado",
+    ColumnsDataName: "IdUsuario,MontoMembresiaAnual,Estado", 
+    onSelectFunction: "BindFields", colorHeader:"red")
+
+
+<div class="card border-secondary" style="margin-top: 50px;">
+    <div class="card-header">
+        <div class="row pull-right">
+            <div class="col-md-8">Editar Usuario</div>
+            <div class="col-md-4">
+                @Html.CtrlButton(viewName: "vMembresias", id: "btnCreate", label: "Save", onClickFunction: "Create", buttonType:"success")
+                @Html.CtrlButton(viewName: "vMembresias", id: "btnUpdate", label: "Save changes", onClickFunction: "Update", buttonType: "info")
+                @Html.CtrlButton(viewName: "vMembresias", id: "btnDelete", label: "Delete", onClickFunction: "Delete",buttonType: "danger")
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bs-component">
+                    <form id="frmEdition">
+                        @Html.CtrlInput(id: "txtIdUsuario", type: "text", label: "IdUsuario", columnDataName: "IdUsuario")
+                        @Html.CtrlInput(id: "txtMontoMembresiaAnual", type: "text", label: "MontoMembresiaAnual", columnDataName: "MontoMembresiaAnual")
+                        @Html.CtrlInput(id: "txtEstado", type: "text", label: "Estado", columnDataName: "Estado")
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>

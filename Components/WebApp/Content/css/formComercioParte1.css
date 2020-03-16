@@ -1,0 +1,183 @@
+
+
+/*---------------------------header-----------------------------*/
+#header {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 25px;
+}
+
+.menu {
+    text-decoration: none;
+    display: none;
+}
+
+
+
+#logo {
+    position: absolute;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 2px 2px;
+}
+
+
+/*--------------------------images----------------------------*/
+
+
+.mainImage1 {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    max-height: 1700px;
+    background-color: #272727;
+}
+
+
+
+img {
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+
+
+/*---------------------------   form     ------------------------------*/
+.formContainer {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1576613672/masterFood/pexels-photo-1267320.jpg);
+    max-width: 1270px;
+    height: 740px;
+    background-size: contain;
+    margin: 80px 0px 0px 100px;
+    border-radius: 20px;
+}
+
+.form {
+    max-width: 650px;
+    height: 700px;
+    position: absolute;
+    background-color: #fff;
+    margin: 20px 0px 0px 690px;
+    border-radius: 10px;
+}
+
+#textDecoForm {
+    color: #fff;
+    text-shadow: 4px 4px 3px #272727;
+    margin-top: 33%;
+    margin-left: 22%;
+    font-size: 60px;
+    text-align: right;
+    position: absolute;
+}
+
+#encabezadoForm {
+    padding-top: 20px;
+    font-family: "Roboto";
+    font-size: 30px;
+}
+
+.left-frm, .right-frm {
+    display: inline-block;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: left;
+    font-family: "Roboto";
+    font-size: 13px
+}
+
+.right-frm {
+    margin-right: 50px;
+    margin-top: -15px;
+    margin-bottom: 70px;
+}
+
+.mapaContainer {
+    background-color: gray;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+#btnRegistrar {
+    width: 200px;
+}
+
+
+#frmDocumento {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 307px;
+    text-align: left;
+    font-family: "Roboto";
+    font-size: 13px
+}
+
+.mapaContainer {
+    background-color: gray;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#doc_preview {
+    display: block;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+
+/*--------------------------texto sobre imagen----------------------------*/
+
+
+.textoSobreImagen {
+    padding: 150% 5%;
+}
+
+    .textoSobreImagen > p {
+        color: #f5f0ed;
+        font-family: "Open Sans";
+        font-size: 16px;
+    }
+
+li {
+    float: left;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #f5f0ed;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+
+/*------------------formularios------------------*/
+
+#txtMapa {
+    display: none;
+    visibility: hidden;
+}
+
+#txtRol, #txtCodigoAsignado, #txtCodigoVerificacion, #txtMin,
+#txtIdUsuarioDoc, #txtIdUsuarioRest, #txtVehiculoEcologico,
+#txtTipoVehiculo, #txtLicenciaConducir {
+    display: none;
+    visibility: hidden;
+}
+
+#doc_preview {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: forestgreen;
+}
+
+#frmDocumento {
+    margin-top: 285px;
+}

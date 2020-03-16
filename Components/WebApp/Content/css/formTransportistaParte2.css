@@ -1,0 +1,165 @@
+
+/*---------------------------header-----------------------------*/
+#header {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 25px;
+}
+
+.menu {
+    text-decoration: none;
+    display: none;
+}
+
+
+#logo {
+    position: absolute;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 2px 2px;
+}
+
+/*--------------------------images----------------------------*/
+
+
+.mainImage1 {
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0px;
+    text-align: center;
+    max-height: 1600px;
+    background-color: #272727;
+}
+
+
+
+img {
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+
+
+/*---------------------------   form     ------------------------------*/
+.formContainer {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1576641673/masterFood/assorted-fruits-and-vegetables-in-baskets-for-sale-in-the-3043328.jpg);
+    max-width: 1300px;
+    height: 560px;
+    background-size: cover;
+    margin: 80px 0px 0px 100px;
+    border-radius: 20px;
+}
+
+.form {
+    max-width: 650px;
+    height: 520px;
+    position: absolute;
+    background-color: #fff;
+    margin: 20px 0px 0px 730px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#textDecoForm {
+    color: #fff;
+    text-shadow: 4px 4px 3px #272727;
+    margin-top: 27%;
+    margin-left: 27%;
+    font-size: 60px;
+    text-align: right;
+    position: absolute;
+}
+
+#encabezadoForm {
+    padding-top: 20px;
+    font-family: "Roboto";
+    font-size: 30px;
+}
+
+
+.frm {
+    margin: 10px;
+    text-align: left;
+    font-family: "Roboto";
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+#btnRegDocs {
+    width: 500px;
+}
+
+/*--------------------------texto sobre imagen----------------------------*/
+
+
+
+li {
+    float: left;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #f5f0ed;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+/*--------------------------secciones----------------------------*/
+
+
+
+.options {
+    display: block;
+    height: 550px;
+    margin-top: 50px;
+}
+
+#separador {
+    position: absolute;
+    min-height: 100px;
+}
+
+.imgInstrucciones {
+    position: absolute;
+    max-width: 350px;
+    max-height: 350px;
+    margin-left: -140px;
+}
+
+.infoImg {
+    max-width: 600px;
+    display: inline-block;
+    text-align: center;
+    margin: 80px 200px;
+}
+
+
+.Instruciones {
+    position: absolute;
+    color: #fff;
+    margin-top: 20%;
+    text-shadow: 2px 2px 3px #272727;
+    margin-left: -130px;
+}
+
+
+/*------------------formularios------------------*/
+
+#txtIdUsuario, #txtLicenciaConducir, #txtMinisterio {
+    display: none;
+    visibility: hidden;
+}
+
+#doc_preview {
+    display: block;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-size: 12px;
+    color: forestgreen;
+}

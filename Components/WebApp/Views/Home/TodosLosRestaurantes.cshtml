@@ -1,0 +1,204 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vHeader.js"></script>
+<script src="~/Scripts/Views/vRestaurantes.js"></script>
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todos los restaurantes</title>
+    <meta charset="utf-8">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/reset.css"> <!--reset style-->
+    <link rel="stylesheet" href="~/Content/css/commons.css">
+    <link rel="stylesheet" href="~/Content/css/todosLosRestaurantes.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<body>
+    <div class="mainImage1">
+
+        <a href="/Home/Index"><img id="logo" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png"></a>
+        <a id="datosUsuario"></a>
+
+        <header id="header">
+
+            <ul id="menuDefault">
+                <li>
+                    @Html.CtrlButton(viewName: "vHome", id: "btnRegTrans", label: "Unirse al Equipo", onClickFunction: "FormTransportista", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHome", id: "btnRegComercio", label: "Asociar Comercio", onClickFunction: "FormComercio", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnLogin" type="button" class="btn btn-danger" data-toggle="modal" data-target="#iniSesion">Iniciar Sesión</button>
+                </li>
+            </ul>
+
+            <!--menu cliente-->
+            <ul id="menuCliente">
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboard", label: "Mi Perfil", onClickFunction: "Dashboard", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnWallet", label: "Wallet Cash", onClickFunction: "Wallet", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnReclamos", label: "Reclamos", onClickFunction: "Reclamos", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnOrdenes", label: "Mis Ordenes", onClickFunction: "Ordenes", buttonType: "danger")
+                </li>
+                <li>
+                    <button id="logout" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+
+            </ul>
+            <ul id="menuComercio">
+                <!--menu comercio-->
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboardComercio", label: "Mi Perfil", onClickFunction: "DashboardComercio", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnRestaurante", label: "Mi Restaurante", onClickFunction: "Restaurante", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnPagos" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>
+                </li>
+                <li>
+                    <button id="logoutCom" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+
+            </ul>
+            <ul id="menuTransportista">
+                <!--menu transportista-->
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboardTransportista", label: "Mi Perfil", onClickFunction: "DashboardTransportista", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnViajes", label: "Viajes Disponibles", onClickFunction: "Viajes", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnPagosTrans" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>
+                </li>
+                <li>
+                    <button id="logoutTrans" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+
+            </ul>
+            <ul id="menuAdmin">
+                <!--menu admin-->
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboardAdmin", label: "Mi Perfil", onClickFunction: "dashboardAdmin", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnBitacora", label: "Bitácora", onClickFunction: "Bitacora", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnPagosAdmin" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>
+                </li>
+                <li>
+                    <button id="logoutAdmin" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+            </ul>
+        </header>
+
+        <div class="textoSobreImagen">
+
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+    <main>
+
+        <section id="categoriasMenu">
+
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingMenu">
+                        <h2 class="mb-0">
+                            <button id="MenuTitle" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="generarCards()">
+                                Todos los restaurantes
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+
+                            <div id=RestContainer>
+
+                                <div class="row" id="cardsRow">
+
+
+
+                                </div>
+                                <br />
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+        </section>
+        <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /><br /><br />
+
+        <!---------------------------------------------------------------------------------------------------------------------->
+
+
+        <section class="options">
+
+
+            <img id="separador" src="https://res.cloudinary.com/veromorera/image/upload/v1573498971/masterFood/veggyRedPattern.jpg" alt="Card image">
+            <h1 id="Instruciones">Buscar por Restaurante o Categoría</h1>
+
+
+            <div id="tablaContainer">
+
+                @Html.CtrlTable(viewName: "vRestaurantes", id: "tbRestaurante", title: "Restaurantes",
+                columnsTitle: "Nombre del Restaurante,Hora de Apertura,Hora de Cierre,Tipo de Restaurante",
+                 ColumnsDataName: "NombreComercial,HorarioOpen,HorarioClose,Categoria",
+                 onSelectFunction: "BindFields", colorHeader: "red")
+
+            </div>>
+
+
+        </section>
+        <!---------------------------------------------------------------------------------------------------------------------->
+
+        <footer id="footer">
+            <img id="logoFooter" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+            <img id="logoLemon" src="https://res.cloudinary.com/veromorera/image/upload/v1574303663/masterFood/logoPSW2-01.jpg">
+
+            <p>
+                MasterFood 2019 - Todos los derechos reservados.<br />
+                Creado por <a id="footerLanding" href="/Home/lemonCode"> LemonCode</a>
+            </p>
+        </footer>
+
+        @* PRIVACIDAD DEL LOGIN *@
+        <script src="~/Scripts/Views/secureLogin.js"></script>
+
+        @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

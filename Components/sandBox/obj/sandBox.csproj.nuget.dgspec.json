@@ -1,0 +1,123 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\sandBox\\sandBox.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\DataAcess\\DataAcess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\DataAcess\\DataAcess.csproj",
+        "projectName": "DataAcess",
+        "projectPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\DataAcess\\DataAcess.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Entities-POJO\\Entities-POJO.csproj": {
+                "projectPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Entities-POJO\\Entities-POJO.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Entities-POJO\\Entities-POJO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Entities-POJO\\Entities-POJO.csproj",
+        "projectName": "Entities-POJO",
+        "projectPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Entities-POJO\\Entities-POJO.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Exceptions\\Exceptions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Exceptions\\Exceptions.csproj",
+        "projectName": "Exceptions",
+        "projectPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Exceptions\\Exceptions.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\DataAcess\\DataAcess.csproj": {
+                "projectPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\DataAcess\\DataAcess.csproj"
+              },
+              "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Entities-POJO\\Entities-POJO.csproj": {
+                "projectPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Entities-POJO\\Entities-POJO.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\sandBox\\sandBox.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\sandBox\\sandBox.csproj",
+        "projectName": "sandBox",
+        "projectPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\sandBox\\sandBox.csproj",
+        "packagesPath": "C:\\Users\\Veronica Morera\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\sandBox\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Veronica Morera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\DataAcess\\DataAcess.csproj": {
+                "projectPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\DataAcess\\DataAcess.csproj"
+              },
+              "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Entities-POJO\\Entities-POJO.csproj": {
+                "projectPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Entities-POJO\\Entities-POJO.csproj"
+              },
+              "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Exceptions\\Exceptions.csproj": {
+                "projectPath": "C:\\Users\\Veronica Morera\\Source\\Repos\\MasterFoodApp\\Components\\Exceptions\\Exceptions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

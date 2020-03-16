@@ -1,0 +1,48 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vProductos.js"></script>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.CtrlTable(viewName: "vProductos", id: "tblProductos", title: "Lista Productos",
+    columnsTitle: "NombreProducto,DescripcionProducto,PrecioProducto,Descuento,IdRestaurante,Imagen,CalificacionProducto",
+    ColumnsDataName: "NombreProducto,DescripcionProducto,PrecioProducto,Descuento,IdRestaurante,Imagen,CalificacionProducto",
+    onSelectFunction: "BindFields", colorHeader:"red")
+
+
+<div class="card border-secondary" style="margin-top: 50px;">
+    <div class="card-header">
+        <div class="row pull-right">
+            <div class="col-md-8">Editar Producto</div>
+            <div class="col-md-4">
+                @Html.CtrlButton(viewName: "vProductos", id: "btnCreate", label: "Save", onClickFunction: "Create", buttonType:"success")
+                @Html.CtrlButton(viewName: "vProductos", id: "btnUpdate", label: "Save changes", onClickFunction: "Update", buttonType: "info")
+                @Html.CtrlButton(viewName: "vProductos", id: "btnDelete", label: "Delete", onClickFunction: "Delete",buttonType: "danger")
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bs-component">
+                    <form id="frmEdition">
+                        @Html.CtrlInput(id: "txtCedula", type: "text", label: "NombreProducto", columnDataName: "NombreProducto")
+                        @Html.CtrlInput(id: "txtNombre", type: "text", label: "DescripcionProducto", columnDataName: "DescripcionProducto")
+                        @Html.CtrlInput(id: "txtApellidos", type: "text", label: "PrecioProducto", columnDataName: "PrecioProducto")
+                        @Html.CtrlInput(id: "txtProvincia", type: "text", label: "Provincia", columnDataName: "Provincia")
+                        @Html.CtrlInput(id: "txtCanton", type: "text", label: "Canton", columnDataName: "Canton")
+                        @Html.CtrlInput(id: "txtDistrito", type: "text", label: "Distrito", columnDataName: "Distrito")
+                        @Html.CtrlInput(id: "txtMapa", type: "text", label: "Mapa", columnDataName: "Mapa")
+                        @Html.CtrlInput(id: "txtTelefono", type: "text", label: "Telefono", columnDataName: "Telefono")
+                        @Html.CtrlInput(id: "txtEmail", type: "text", label: "Email", columnDataName: "Email")
+                        @Html.CtrlInput(id: "txtContrasena", type: "text", label: "Contrasena", columnDataName: "Contrasena")
+                        @Html.CtrlInput(id: "txtRol", type: "text", label: "Rol", columnDataName: "Rol")
+                        @Html.CtrlInput(id: "txtIdPaypal", type: "text", label: "IdPaypal", columnDataName: "IdPaypal")
+                        @Html.CtrlInput(id: "txtCodigoAsignado", type: "text", label: "CodigoAsignado", columnDataName: "CodigoAsignado")
+                        @Html.CtrlInput(id: "txtCodigoVerif", type: "text", label: "CodigoVerificacion", columnDataName: "CodigoVerificacion")
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>

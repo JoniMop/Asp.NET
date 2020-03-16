@@ -1,0 +1,171 @@
+
+
+/*---------------------------header-----------------------------*/
+#header{
+	position: absolute;
+	margin-left: 64%;
+	margin-top: 25px;
+}
+
+.menu{
+	text-decoration: none;
+	display: none;
+}
+
+#logo {
+    position: absolute;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 2px 2px;
+}
+
+
+/*--------------------------images----------------------------*/
+
+
+.mainImage1{
+    background-size: cover;
+   	background-position: center;
+    padding: 20px;
+    text-align: center;
+    max-height: 1000px;
+    background-color: #272727;
+    padding-bottom: 100px;
+
+}
+
+
+
+img{
+	background-size: cover;
+	width: 100%;
+    display: block;
+}
+
+
+
+
+/*---------------------------   form     ------------------------------*/
+.formContainer {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498968/masterFood/crearWallet.jpg);
+    max-width: 1200px;
+    height: 600px;
+    background-size: cover;
+    margin: 80px 0px 0px 150px;
+    border-radius: 20px;
+}
+
+.form{
+	min-width: 450px;
+	height: 500px;
+	position: absolute;
+	background-color: #fff;
+	margin: 50px 0px 0px 700px;
+	border-radius: 10px;
+}
+#textDecoForm{
+	color: #fff;
+	text-shadow: 4px 4px 3px #272727;	
+	padding-top: 28%;
+	padding-right: 43%;
+	font-size: 60px;
+	text-align: right;
+}
+
+#encabezadoForm{
+	padding-top: 20px;
+}
+
+
+/*--------------------------texto sobre imagen----------------------------*/
+
+
+.textoSobreImagen{
+	padding: 150% 5%;
+}
+
+.textoSobreImagen > p{
+	color: #f5f0ed;
+	font-family: "Open Sans";
+	font-size: 16px;
+}
+
+li{
+	float: left;
+	display: block;
+	font-family: "Open Sans", sans-serif; 
+	font-weight: 800; 
+}
+
+a{
+	color: #f5f0ed;
+	font-family: "Open Sans";
+ 	font-size: 16px;
+ }
+
+.boton{
+    border-style: solid;
+    border-color: #fff;
+   	border-width: 3px;
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #f5f0ed;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+/*--------------------------secciones----------------------------*/
+
+.card-deck{
+	margin: 20px;
+}
+
+.card-title{
+	padding-top: 10px;
+	text-align: center;
+	font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+}
+
+.options{
+	height: 600px;
+}
+#separador{
+	position: absolute;
+	min-height: 100px;
+}
+
+.imgInstrucciones{
+	position: absolute;
+	max-width: 350px;
+	max-height: 350px;
+
+}
+
+.infoImg{
+	max-width: 600px;
+	display: inline-block;
+	text-align: center;
+	margin: 80px 200px;
+}
+
+
+.Instruciones{
+	position: absolute;
+	color: #fff;
+	margin-top: 20%;
+	margin-left: 100px;
+	text-shadow: 2px 2px 3px #272727;	
+
+}
+/*--------------------------facs----------------------------*/
+.faqs{
+	min-width: 400px;
+	min-height: 600px;
+
+}

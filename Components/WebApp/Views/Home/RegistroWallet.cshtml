@@ -1,0 +1,93 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vHeader.js"></script>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Wallet</title>
+    <meta charset="utf-8">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/reset.css"> <!--reset style-->
+    <link rel="stylesheet" href="~/Content/css/commons.css">
+    <link rel="stylesheet" href="~/Content/css/registrarWallet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="mainImage1">
+        <a href="/Home/Index"><img id="logo" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png"></a>
+        <a id="datosUsuario"></a>
+
+        <header id="header">
+
+            <ul id="menuDefault"></ul>
+            <ul id="menuComercio"></ul>
+            <ul id="menuTransportista"></ul>
+            <ul id="menuAdmin"></ul>
+            <ul id="menuCliente"></ul>
+
+            <!--menu cliente-->
+            <ul>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboard", label: "Mi Perfil", onClickFunction: "Dashboard", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnWallet", label: "Wallet Cash", onClickFunction: "Wallet", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnReclamos", label: "Reclamos", onClickFunction: "Reclamos", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnOrdenes", label: "Mis Ordenes", onClickFunction: "Ordenes", buttonType: "danger")
+                </li>
+                <li>
+                    <button id="logout" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+            </ul>
+        </header>
+
+        <div class="formContainer">
+            <div class="form">
+                <h2 id="encabezadoForm">Crear un Wallet</h2>
+            </div>
+            <h2 id="textDecoForm">
+                ¡Aumente
+                <br>sus ingresos!
+
+            </h2>
+        </div>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <footer id="footer">
+        <img id="logoFooter" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+        <img id="logoLemon" src="https://res.cloudinary.com/veromorera/image/upload/v1574303663/masterFood/logoPSW2-01.jpg">
+
+        <p>
+            MasterFood 2019 - Todos los derechos reservados.<br />
+            Creado por <a id="footerLanding" href="/Home/lemonCode"> LemonCode</a>
+        </p>
+    </footer>
+
+    @* PRIVACIDAD DEL LOGIN *@
+    <script src="~/Scripts/Views/secureLogin.js"></script>
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

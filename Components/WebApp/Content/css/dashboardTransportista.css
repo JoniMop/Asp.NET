@@ -1,0 +1,258 @@
+
+/*---------------------------header-----------------------------*/
+#header {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 25px;
+}
+
+.menu {
+    text-decoration: none;
+    display: none;
+}
+
+
+#logo {
+    position: absolute;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 2px 2px;
+}
+
+#BtnPagos {
+    margin: 0px 5px;
+}
+
+/*--------------------------images----------------------------*/
+
+
+.mainImage1 {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    max-height: 1000px;
+    background-color: #272727;
+    padding-bottom: 100px;
+}
+
+
+
+img {
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+
+
+
+/*--------------------------texto sobre imagen----------------------------*/
+
+
+.textoSobreImagen {
+    padding: 150% 5%;
+}
+
+    .textoSobreImagen > p {
+        color: #f5f0ed;
+        font-family: "Open Sans";
+        font-size: 16px;
+    }
+
+li {
+    float: left;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #f5f0ed;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+.boton {
+    border-style: solid;
+    border-color: #fff;
+    border-width: 3px;
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #f5f0ed;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+/*--------------------------secciones----------------------------*/
+.botInstructions {
+    height: 230px;
+}
+
+#botTextInstructions {
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    position: absolute;
+    margin-top: -180px;
+    padding-left: 715px;
+}
+
+.imgBotInstructions {
+    padding: 5px;
+    max-height: 900px;
+    max-width: 800px;
+    margin-left: 25%;
+}
+
+.options {
+    height: 400px;
+    background-color: #F2B705;
+}
+
+.imgInstrucciones {
+    position: absolute;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.infoImg {
+    max-width: 200px;
+    display: inline-block;
+    text-align: center;
+    margin: 60px 150px;
+    padding: 10px 20px;
+}
+
+.Instruciones {
+    position: absolute;
+    color: black;
+    margin-top: 18%;
+    margin-left: 100px;
+}
+
+#Instruciones {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 41%;
+}
+
+
+/*--------------------------table----------------------------*/
+.tablaContainer {
+    padding: 60px;
+    min-width: 400px;
+    min-height: 730px;
+}
+
+/*--------------------------adverticing----------------------------*/
+.adverticingContainer {
+    max-height: 520px;
+}
+
+#textDecoForm {
+    color: #fff;
+    text-shadow: 4px 4px 3px #272727;
+    font-size: 60px;
+    text-align: right;
+    position: absolute;
+    margin-top: -460px;
+    padding-left: 200px;
+}
+/*--------------------------adverticing----------------------------*/
+
+.BalanceGraph {
+    padding: 100px;
+    min-height: 700px;
+}
+
+/*--------------------------main order buttons----------------------------*/
+
+
+.bouton-image:before {
+    content: "";
+    width: 300px;
+    height: 230px;
+    display: block;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+#paso1, #paso2, #paso3, #paso4 {
+    text-shadow: none;
+    margin-left: 40px;
+    font-size: 16px;
+    margin-top: 55px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+
+
+#paso1 {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/estadosOrdenes/cliente1_trans1_bw.png);
+}
+
+
+    #paso1:focus {
+        background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/estadosOrdenes/cliente1_trans1.png);
+        outline: 0;
+        box-shadow: none !important;
+    }
+
+#paso2 {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/estadosOrdenes/rest1_trans2_bw.png);
+}
+
+    #paso2:focus {
+        background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/estadosOrdenes/rest1_trans2.png);
+        outline: 0;
+        box-shadow: none !important;
+    }
+
+#paso3 {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498966/masterFood/estadosOrdenes/cliente4_trans3_bw.png);
+}
+
+    #paso3:focus {
+        background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498966/masterFood/estadosOrdenes/cliente4_trans3.png);
+        outline: 0;
+        box-shadow: none !important;
+    }
+
+#paso4 {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498966/masterFood/estadosOrdenes/cliente5_trans4_bw.png);
+}
+
+    #paso4:focus {
+        background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498966/masterFood/estadosOrdenes/cliente5_trans4.png);
+        outline: 0;
+        box-shadow: none !important;
+    }
+
+/*--------------------------modals----------------------------*/
+
+
+
+#logoModal {
+    border-radius: 20px;
+    margin-left: 58px;
+    max-height: 150px;
+    max-width: 150px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.modal-title {
+    font-family: "Roboto Condensed", sans-serif;
+    position: absolute;
+    margin: 165px 70px;
+}

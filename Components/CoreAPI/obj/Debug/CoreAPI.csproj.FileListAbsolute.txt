@@ -1,0 +1,130 @@
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\bin\Debug\CoreAPI.dll
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\bin\Debug\CoreAPI.pdb
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\bin\Debug\DataAcess.dll
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\bin\Debug\Entities-POJO.dll
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\bin\Debug\Exceptions.dll
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\bin\Debug\DataAcess.pdb
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\bin\Debug\Entities-POJO.pdb
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\bin\Debug\Exceptions.pdb
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\obj\Debug\CoreAPI.csprojAssemblyReference.cache
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CopyComplete
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\obj\Debug\CoreAPI.dll
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\CoreAPI\obj\Debug\CoreAPI.pdb
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\bin\Debug\CoreAPI.dll
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\bin\Debug\CoreAPI.pdb
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\bin\Debug\DataAcess.dll
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\bin\Debug\Entities-POJO.dll
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\bin\Debug\Exceptions.dll
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\bin\Debug\DataAcess.pdb
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\bin\Debug\Entities-POJO.pdb
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\bin\Debug\Exceptions.pdb
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CopyComplete
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\obj\Debug\CoreAPI.dll
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\obj\Debug\CoreAPI.pdb
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\CoreAPI\obj\Debug\CoreAPI.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\bin\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\bin\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\obj\Debug\CoreAPI.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CopyComplete
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\obj\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\CoreAPI\obj\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\obj\Debug\CoreAPI.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\obj\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\obj\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\bin\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\bin\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CopyComplete
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\bin\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\bin\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\obj\Debug\CoreAPI.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CopyComplete
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\obj\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\CoreAPI\obj\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\obj\Debug\CoreAPI.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\obj\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\obj\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\bin\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\bin\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CopyComplete
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\obj\Debug\CoreAPI.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\obj\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\obj\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\bin\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\bin\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CopyComplete
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\bin\Debug\CoreAPI.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\bin\Debug\CoreAPI.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\bin\Debug\DataAcess.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\bin\Debug\Entities-POJO.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\bin\Debug\Exceptions.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\bin\Debug\DataAcess.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\bin\Debug\Entities-POJO.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\bin\Debug\Exceptions.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\obj\Debug\CoreAPI.csprojAssemblyReference.cache
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CopyComplete
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\obj\Debug\CoreAPI.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\CoreAPI\obj\Debug\CoreAPI.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\bin\Debug\CoreAPI.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\bin\Debug\CoreAPI.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\bin\Debug\DataAcess.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\bin\Debug\Entities-POJO.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\bin\Debug\Exceptions.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\bin\Debug\DataAcess.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\bin\Debug\Entities-POJO.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\bin\Debug\Exceptions.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\obj\Debug\CoreAPI.csprojAssemblyReference.cache
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CopyComplete
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\obj\Debug\CoreAPI.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\CoreAPI\obj\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\bin\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\bin\Debug\CoreAPI.pdb
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\obj\Debug\CoreAPI.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\obj\Debug\CoreAPI.csproj.CopyComplete
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\obj\Debug\CoreAPI.dll
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\CoreAPI\obj\Debug\CoreAPI.pdb

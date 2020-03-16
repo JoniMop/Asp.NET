@@ -1,0 +1,223 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vHeader.js"></script>
+<script src="~/Scripts/Views/vViajes.js"></script>
+<script src="~/Scripts/Views/vOrdenCompra.js"></script>
+<script src="~/Scripts/Views/vTransaccion.js"></script>
+
+
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Transportista</title>
+    <meta charset="utf-8">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/reset.css"> <!--reset style-->
+    <link rel="stylesheet" href="~/Content/css/commons.css">
+    <link rel="stylesheet" href="~/Content/css/dashboardTransportista.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="mainImage1">
+        <a href="/Home/Index"><img id="logo" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png"></a>
+        <a id="datosUsuario"></a>
+
+        <header id="header">
+            <ul id="menuDefault"></ul>
+            <ul id="menuComercio"></ul>
+            <ul id="menuTransportista"></ul>
+            <ul id="menuAdmin"></ul>
+            <ul id="menuCliente"></ul>
+
+            <!--menu cliente-->
+            <ul>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboardTransportista", label: "Mi Perfil", onClickFunction: "DashboardTransportista", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnViajes", label: "Viajes Disponibles", onClickFunction: "Viajes", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnPagos" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>
+                </li>
+                <li>
+                    <button id="logout" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+            </ul>
+        </header>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <section class="botInstructions">
+
+        <img class="imgBotInstructions" src="https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/Web_1920_2.png">
+
+        <p id="botTextInstructions">
+            ¿Cómo gestionar una orden?
+            <br />
+            <br>1- Presione el botón que corresponde al estado en<br /> el que se encuentra la orden.
+            <br>2- Al finalizar, la orden se archivará en su historial de viajes.
+        </p>
+
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <section class="options">
+
+        <h1 id="Instruciones">Estado de su Viaje</h1>
+
+
+        <button id="paso1" class="btn btn-default bouton-image">Aceptar Viaje</button>
+
+        <button id="paso2" class="btn btn-default bouton-image">Retirar pedido en el restaurante</button>
+
+        <button id="paso3" class="btn btn-default bouton-image">Dirigirse al destino del consumidor</button>
+
+        <button id="paso4" class="btn btn-default bouton-image">Entregar el pedido al consumidor</button>
+
+
+
+    </section>
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <section class="tablaContainer">
+        <h1>Historial de Viajes</h1>
+
+        <br />
+
+        @Html.CtrlTable(viewName: "vViajes", id: "tbViaje", title: "Viajes Realizados", columnsTitle: "NombreTransportista, Tarifa Básica,Kilometros Recorridos,Descuento Ecológico,Ganancia Total",
+                ColumnsDataName: "NombreTransportista,TarifaBasica,KilometrosRecorridos,DescuentoEcologico,PagoTotal", onSelectFunction: "BindFields", colorHeader: "red")
+
+
+    </section>
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <section class="adverticingContainer">
+        <img src="https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/dashboardTransportista.jpg">
+
+        <h2 id="textDecoForm">
+            ¡Reciba un bono de
+            <br>10% por cada viaje
+            <br>realizado en un
+            <br>vehículo ecológico!
+        </h2>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <section class="BalanceGraph">
+        <h1>Balance de Ganancias</h1>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <footer id="footer">
+        <img id="logoFooter" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+        <img id="logoLemon" src="https://res.cloudinary.com/veromorera/image/upload/v1574303663/masterFood/logoPSW2-01.jpg">
+
+        <p>
+            MasterFood 2019 - Todos los derechos reservados.<br />
+            Creado por <a id="footerLanding" href="/Home/lemonCode"> LemonCode</a>
+        </p>
+    </footer>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- The Modal viajes-->
+    <div class="modal fade" id="viajes">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+
+
+                    <img id="logoModal" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+                    <br>
+
+                    <h3 class="modal-title"> Viajes Disponibles</h3>
+
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    @Html.CtrlTable(viewName: "vOrdenCompra", id: "tbOrdenCompra", title: "Viajes Disponibles", columnsTitle: "Nombre del Cliente,Estado de la Orden, Herramientas",
+                            ColumnsDataName: "NombreCliente,EstadoOrden", onSelectFunction: "BindFields", colorHeader: "red")
+
+
+                </div>
+
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+
+                    @Html.CtrlButton(viewName: "vOrdenCompra", id: "btnSelectViaje", label: "Seleccionar Viaje", onClickFunction: "AceptarViaje", buttonType: "success")
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- The Modal Pagos a Paypal-->
+    <div class="modal fade" id="pagoDesgloce">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+                    <img id="logoModal" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+                    <br>
+
+                    <h4 class="modal-title2">Desgloce de Ganancias</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="tablaContainer2">
+                        @Html.CtrlTable(viewName: "vTransaccion", id: "tbTransaccion", title: "Desgloce de Ganancias",
+                            columnsTitle: "Crédito,Detalle,Fecha",
+                            ColumnsDataName: "Credito,Detalle,Fecha",
+                            onSelectFunction: "BindFields", colorHeader: "red")
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    @Html.CtrlButton(viewName: "vTransaccion", id: "btnPagoPaypal", label: "Enviar dinero a PayPal", onClickFunction: "PagoPaypal", buttonType: "success")
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* PRIVACIDAD DEL LOGIN *@
+    <script src="~/Scripts/Views/secureLogin.js"></script>
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

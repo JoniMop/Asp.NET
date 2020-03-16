@@ -1,0 +1,494 @@
+﻿@model WebApp.Models.email
+
+@using WebApp.Helpers;
+<script src="~/Scripts/Views/vHome.js"></script>
+<script src="~/Scripts/Views/vLogin.js"></script>
+<script src="~/Scripts/Views/vHeader.js"></script>
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Index</title>
+    <meta charset="utf-8">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/reset.css"> <!--reset style-->
+    <link rel="stylesheet" href="~/Content/css/commons.css">
+    <link href="~/Content/css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <div class="mainImage1">
+
+        <a href="/Home/Index"><img id="logo" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png"></a>
+        <a id="datosUsuario"></a>
+
+        <header id="header">
+
+
+            <ul id="menuDefault">
+                <li>
+                    @Html.CtrlButton(viewName: "vHome", id: "btnRegTrans", label: "Unirse al Equipo", onClickFunction: "FormTransportista", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHome", id: "btnRegComercio", label: "Asociar Comercio", onClickFunction: "FormComercio", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnLogin" type="button" class="btn btn-danger" data-toggle="modal" data-target="#iniSesion">Iniciar Sesión</button>
+                </li>
+            </ul>
+
+            <!--menu cliente-->
+            <ul id="menuCliente">
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboard", label: "Mi Perfil", onClickFunction: "Dashboard", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnWallet", label: "Wallet Cash", onClickFunction: "Wallet", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnReclamos", label: "Reclamos", onClickFunction: "Reclamos", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnOrdenes", label: "Mis Ordenes", onClickFunction: "Ordenes", buttonType: "danger")
+                </li>
+                <li>
+                    <button id="logout" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+
+            </ul>
+            <ul id="menuComercio">
+                <!--menu comercio-->
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboardComercio", label: "Mi Perfil", onClickFunction: "DashboardComercio", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnRestaurante", label: "Mi Restaurante", onClickFunction: "Restaurante", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnPagos" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>
+                </li>
+                <li>
+                    <button id="logoutCom" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+
+            </ul>
+            <ul id="menuTransportista">
+                <!--menu transportista-->
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboardTransportista", label: "Mi Perfil", onClickFunction: "DashboardTransportista", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnViajes", label: "Viajes Disponibles", onClickFunction: "Viajes", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnPagosTrans" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>
+                </li>
+                <li>
+                    <button id="logoutTrans" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+
+            </ul>
+            <ul id="menuAdmin">
+                <!--menu admin-->
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboardAdmin", label: "Mi Perfil", onClickFunction: "dashboardAdmin", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnBitacora", label: "Bitácora", onClickFunction: "Bitacora", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnPagosAdmin" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>
+                </li>
+                <li>
+                    <button id="logoutAdmin" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+            </ul>
+        </header>
+
+        <div class="textoSobreImagen">
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <main>
+
+        <section class="categoriasMenu">
+            <h1>¿Qué hay en el menú?</h1>
+
+
+            <div class="card-deck">
+                <div class="card img-fluid">
+                    <a id="Hamburguesas" href="/Home/RestaurantesXCategoria">
+                        <img class="card-img" src="https://res.cloudinary.com/veromorera/image/upload/v1573501634/masterFood/categorias/Web_1920_1.jpg" alt="Card image">
+                    </a>
+
+                    <h4 class="card-title">Hamburguesas</h4>
+                </div>
+
+                <div class="card img-fluid">
+                    <a id="Pizzas" href="/Home/RestaurantesXCategoria">
+                        <img class="card-img" src=https://res.cloudinary.com/veromorera/image/upload/v1573501633/masterFood/categorias/Artboard_1.jpg alt="Card image">
+                    </a>
+                    <h4 class="card-title">Pizzas</h4>
+                </div>
+
+                <div class="card img-fluid">
+                    <a id="Pollo" href="/Home/RestaurantesXCategoria">
+                        <img class="card-img" src="https://res.cloudinary.com/veromorera/image/upload/v1573501633/masterFood/categorias/Artboard_2.jpg" alt="Card image">
+                    </a>
+                    <h4 class="card-title">Pollo</h4>
+                </div>
+            </div>
+
+            <div class="card-deck">
+                <div class="card img-fluid">
+                    <a id="Asiatica" href="/Home/RestaurantesXCategoria">
+                        <img class="card-img" src="https://res.cloudinary.com/veromorera/image/upload/v1573501633/masterFood/categorias/Artboard_3.jpg" alt="Card image">
+                    </a>
+                    <h4 class="card-title">Asiática</h4>
+                </div>
+
+                <div class="card img-fluid">
+                    <a id="Nacional" href="/Home/RestaurantesXCategoria">
+                        <img class="card-img" src=https://res.cloudinary.com/veromorera/image/upload/v1573501634/masterFood/categorias/Artboard_4.jpg alt="Card image">
+                    </a>
+                    <h4 class="card-title">Nacional</h4>
+                </div>
+
+                <div class="card img-fluid">
+                    <a id="India" href="/Home/RestaurantesXCategoria">
+                        <img class="card-img" src="https://res.cloudinary.com/veromorera/image/upload/v1573501633/masterFood/categorias/Artboard_5.jpg" alt="Card image">
+                    </a>
+                    <h4 class="card-title">India y Medio Oriente</h4>
+                </div>
+            </div>
+
+            <div class="card-deck">
+                <div class="card img-fluid">
+                    <a id="Saludable" href="/Home/RestaurantesXCategoria">
+                        <img class="card-img" src="https://res.cloudinary.com/veromorera/image/upload/v1573501633/masterFood/categorias/Artboard_6.jpg" alt="Card image">
+                    </a>
+                    <h4 class="card-title">Saludable</h4>
+                </div>
+
+                <div class="card img-fluid">
+                    <a id="Reposteria" href="/Home/RestaurantesXCategoria">
+                        <img class="card-img" src=https://res.cloudinary.com/veromorera/image/upload/v1573501634/masterFood/categorias/Artboard_7.jpg alt="Card image">
+                    </a>
+                    <h4 class="card-title">Café y Reposterí­a</h4>
+                </div>
+
+                <div class="card img-fluid">
+                    <a id="Postres" href="/Home/RestaurantesXCategoria">
+                        <img class="card-img" src="https://res.cloudinary.com/veromorera/image/upload/v1573501634/masterFood/categorias/Artboard_8.jpg" alt="Card image">
+                    </a>
+                    <h4 class="card-title">Helados y Smoothies</h4>
+                </div>
+            </div>
+
+            @Html.CtrlButton(viewName: "vHome", id: "btnTodosLosRest", label: "Ver todos los restaurantes", onClickFunction: "TodosLosRest", buttonType: "basic")
+
+
+        </section>
+        <br><br>
+        <!---------------------------------------------------------------------------------------------------------------------->
+
+
+        <section class="options">
+            <img id="separador" src="https://res.cloudinary.com/veromorera/image/upload/v1573498971/masterFood/veggyRedPattern.jpg" alt="Card image">
+            <h1 id="Instruciones">¿Cómo Funciona?</h1>
+            <div class="infoImg">
+
+                <img class="imgInstrucciones" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/informativo_home/paso1.png">
+                <p class="Instruciones">
+                    1. Ordene su comida<br> <br />
+                    Elija sus productos favoritos de una<br>
+                    variada cantidad de restaurantes
+                </p>
+            </div>
+            <div class="infoImg">
+
+                <img class="imgInstrucciones" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/informativo_home/paso2.png">
+                <p class="Instruciones">
+                    2. Realice su compra<br><br />
+                    Realice sus pagos de manera segura <br>
+                    a través de PayPal o nuestro sistema de Cash
+                </p>
+
+            </div>
+            <div class="infoImg">
+
+                <img class="imgInstrucciones" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/informativo_home/paso3.png">
+                <p class="Instruciones">
+                    3. ¡Reciba y disfrute!  <br /><br />
+                    Rastré su orden con nuestro Telegram <br />
+                    y califique la experiencia escaneando<br />
+                    el código QR del producto
+                </p>
+            </div>
+
+
+        </section>
+
+        <!---------------------------------------------------------------------------------------------------------------------->
+
+
+        <section class="careers">
+            <h1>Únase a nuestro equipo</h1>
+
+            <div class="workCards">
+                @Html.CtrlButton(viewName: "vHome", id: "registreNegocio", label: "Registre su Negocio", onClickFunction: "FormComercio", buttonType: "danger")
+
+                <img class="card-work" src=https://res.cloudinary.com/veromorera/image/upload/v1573498966/masterFood/homeComercio.jpg alt="Card image">
+            </div>
+
+            <div class="workCards">
+                @Html.CtrlButton(viewName: "vHome", id: "colaboreConNostros", label: "Colabore con Nosotros", onClickFunction: "FormTransportista", buttonType: "danger")
+
+                <img class="card-work" src=https://res.cloudinary.com/veromorera/image/upload/v1573498966/masterFood/homeTransportista.jpg alt="Card image">
+            </div>
+
+        </section>
+        <br><br><br>
+    </main>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <footer id="footer">
+        <img id="logoFooter" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+        <img id="logoLemon" src="https://res.cloudinary.com/veromorera/image/upload/v1574303663/masterFood/logoPSW2-01.jpg">
+
+        <p>
+            MasterFood 2019 - Todos los derechos reservados.<br />
+            Creado por <a id="footerLanding" href="/Home/lemonCode"> LemonCode</a>
+        </p>
+    </footer>
+
+
+    <!--------------------------------------------MODALES!!!-------------------------------------------------------------------------->
+    <!-- The Modal olvido pass-->
+    <div class="modal fade" id="olvidoPass">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+                    <h4>Le enviaremos un correo electrónico con su contraseña</h4>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+
+
+
+                    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        @Html.TextBoxFor(model => model.TempPass, new { Id = "tempPass" })
+
+                        @Html.TextBoxFor(model => model.To, new { Id = "inputPass" })
+
+                        <input type="submit" value="Recuperar Contraseña" class="btn btn-success" id="btnRecoverPass" />
+                    }
+                </div>
+
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    <button id="BtnLogin" type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- The Modal codigo verificacion-->
+    <div class="modal fade" id="codigoVerif" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered modal">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+                    <h5>
+                        Ingrese el código de verificación que enviamos
+                        a su correo electrónico:
+                    </h5>
+
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form id="frmEdition2">
+                        <!--Hidden-->@Html.CtrlInput(id: "txtCedula2", type: "text", label: "", columnDataName: "Cedula")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtNombre2", type: "text", label: "", columnDataName: "Nombre")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtApellidos2", type: "text", label: "", columnDataName: "Apellidos")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtProvincia2", type: "text", label: "", columnDataName: "Provincia")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtCanton2", type: "text", label: "", columnDataName: "Canton")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtDistrito2", type: "text", label: "", columnDataName: "Distrito")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtMapa2", type: "text", label: "", columnDataName: "Mapa")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtTelefono2", type: "number", label: "", columnDataName: "Telefono")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtEmail3", type: "email", label: "", columnDataName: "Email")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtPass2", type: "text", label: "", columnDataName: "Contrasena")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtRol2", type: "text", label: "", columnDataName: "Rol")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtIdPaypal2", type: "text", label: "", columnDataName: "IdPaypal")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtCodigoAsignado2", type: "text", label: "", columnDataName: "CodigoAsignado")
+                        <div class="divActivePass">
+                            @Html.CtrlInput(id: "txtCodigoVerificacion2", type: "text", label: "Código de Verificación", columnDataName: "CodigoVerificacion")
+                        </div>
+                    </form>
+
+                    @Html.CtrlButton(viewName: "vLogin", id: "BtnActiveUser", label: "Activar Cuenta", onClickFunction: "activarCuenta", buttonType: "success")
+                    <button id="cerrarUpdate2" type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+
+                </div>
+
+        </div>
+    </div>
+        </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- The Modal codigo verificacion-->
+    <div class="modal fade" id="newPass" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+                    <h5>
+                        Actualice su contraseña
+                    </h5>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    @Html.CtrlInput(id: "txtTempPass", type: "text", label: "Contraseña Temporal")
+
+                    <form id="frmEdition">
+                        <!--Hidden-->@Html.CtrlInput(id: "txtCedula", type: "text", label: "", columnDataName: "Cedula")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtNombre", type: "text", label: "", columnDataName: "Nombre")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtApellidos", type: "text", label: "", columnDataName: "Apellidos")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtProvincia", type: "text", label: "", columnDataName: "Provincia")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtCanton", type: "text", label: "", columnDataName: "Canton")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtDistrito", type: "text", label: "", columnDataName: "Distrito")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtMapa", type: "text", label: "", columnDataName: "Mapa")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtTelefono", type: "number", label: "", columnDataName: "Telefono")
+
+                        <div class="divUpdatePass">
+                            @Html.CtrlInput(id: "txtEmail2", type: "email", label: "Correo Electrónico", columnDataName: "Email")
+                            @Html.CtrlInput(id: "txtNewPass", type: "text", label: "Nueva Contraseña", columnDataName: "Contrasena")
+                        </div>
+                        <!--Hidden-->@Html.CtrlInput(id: "txtRol", type: "text", label: "", columnDataName: "Rol")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtIdPaypal", type: "text", label: "", columnDataName: "IdPaypal")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtCodigoAsignado", type: "text", label: "", columnDataName: "CodigoAsignado")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtCodigoVerificacion", type: "text", label: "", columnDataName: "CodigoVerificacion")
+
+                    </form>
+                    @Html.CtrlButton(viewName: "recuperarPass", id: "BtnUpdateUser", label: "Actualizar Contraseña", onClickFunction: "Update", buttonType: "success")
+                    <button id="cerrarUpdate" type="button" class="btn btn-danger" data-dismiss="modal">Salir</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- The Modal Iniciar sesion -->
+    <div class="modal fade" id="iniSesion">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+                    <img id="logoModal" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+                    <br>
+
+                    <h4 class="modal-title">Iniciar Sesión</h4>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <input type="email" class="form-control" id="txtCorreoModal" placeholder="Correo Electrónico" required>
+                    <br>
+                    <input type="password" class="form-control" id="txtContrasenaModal" placeholder="Contraseña" required>
+                    <br>
+                    @Html.CtrlButton(viewName: "vLogin", id: "btnIngresar", label: "Ingresar", onClickFunction: "iniciarSesion", buttonType: "success")
+                    <br>
+                    <div id="divisionLine"></div>
+
+                    <a href="#olvidoPass" id="forgotpass" data-toggle="modal" data-dismiss="modal">¿Olvidó la contraseña? </a>
+
+                </div>
+
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    <p id="newUser">¿Usuario nuevo?</p>
+                    @Html.CtrlButton(viewName: "vHome", id: "btnReg", label: "Registarse", onClickFunction: "RegCliente", buttonType: "danger")
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- The Modal Pago Membresia-->
+    <div class="modal fade" id="pagoMembresia">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+                    <img id="logoModal" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+                    <br>
+
+                    <h4 class="modal-title">Pago de Membresía</h4>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>AQUI VAN LOS PAGOS</p>
+                    <br>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    @Html.CtrlButton(viewName: "vHome", id: "btnPago", label: "Pagar con PayPal", onClickFunction: "RedirigirPago", buttonType: "success")
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* PRIVACIDAD DEL LOGIN *@
+    <script src="~/Scripts/Views/secureLogin.js"></script>
+    @* Categorias de comida *@
+    <script src="~/Scripts/Views/vCategorias.js"></script>
+
+    <script src="~/Scripts/Views/recuperarPass.js"></script>
+
+
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

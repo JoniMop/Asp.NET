@@ -1,0 +1,47 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vViajes.js"></script>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.CtrlTable(viewName: "vViajes", id: "tblViajes", title: "Lista Viajes",
+    columnsTitle: "IdTransportista,TarifaBasica,KilometrosRecorridos,DescuentoEcologico,PagoTotal," +
+    "Mapa,PuntoPartidaLatitud,PuntoPartidaLongitud,PuntoLlegadaLatitud,PuntoLlegadaLongitud",
+    ColumnsDataName: "IdTransportista,TarifaBasica,KilometrosRecorridos,DescuentoEcologico,PagoTotal," +
+    "Mapa,PuntoPartidaLatitud,PuntoPartidaLongitud,PuntoLlegadaLatitud,PuntoLlegadaLongitud",
+    onSelectFunction: "BindFields", colorHeader:"red")
+
+
+<div class="card border-secondary" style="margin-top: 50px;">
+    <div class="card-header">
+        <div class="row pull-right">
+            <div class="col-md-8">Editar Usuario</div>
+            <div class="col-md-4">
+                @Html.CtrlButton(viewName: "vViajes", id: "btnCreate", label: "Save", onClickFunction: "Create", buttonType:"success")
+                @Html.CtrlButton(viewName: "vViajes", id: "btnUpdate", label: "Save changes", onClickFunction: "Update", buttonType: "info")
+                @Html.CtrlButton(viewName: "vViajes", id: "btnDelete", label: "Delete", onClickFunction: "Delete",buttonType: "danger")
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bs-component">
+                    <form id="frmEdition">
+                        @Html.CtrlInput(id: "txtTransportista", type: "text", label: "IdTransportista", columnDataName: "IdTransportista")
+                        @Html.CtrlInput(id: "txtTarifaBasica", type: "text", label: "TarifaBasica", columnDataName: "TarifaBasica")
+                        @Html.CtrlInput(id: "txtKilometrosRecorridos", type: "text", label: "KilometrosRecorridos", columnDataName: "KilometrosRecorridos")
+                        @Html.CtrlInput(id: "txtDescuentoEcologico", type: "text", label: "DescuentoEcologico", columnDataName: "DescuentoEcologico")
+                        @Html.CtrlInput(id: "txtPagoTotal", type: "text", label: "PagoTotal", columnDataName: "PagoTotal")
+                        @Html.CtrlInput(id: "txtMapa", type: "text", label: "Mapa", columnDataName: "Mapa")
+                        @Html.CtrlInput(id: "txtPuntoPartidaLatitud", type: "text", label: "PuntoPartidaLatitud", columnDataName: "PuntoPartidaLatitud")
+                        @Html.CtrlInput(id: "txtPuntoPartidaLongitud", type: "text", label: "PuntoPartidaLongitud", columnDataName: "PuntoPartidaLongitud")
+                        @Html.CtrlInput(id: "txtPuntoLlegadaLatitud", type: "text", label: "PuntoLlegadaLatitud", columnDataName: "PuntoLlegadaLatitud")
+                        @Html.CtrlInput(id: "txtPuntoLlegadaLongitud", type: "text", label: "PuntoLlegadaLongitud", columnDataName: "PuntoLlegadaLongitud")
+
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>

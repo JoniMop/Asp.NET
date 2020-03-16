@@ -1,0 +1,49 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vOrdenCompra.js"></script>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.CtrlTable(viewName: "vOrdenCompra", id: "tblOrdenCompra", title: "Lista Orden Compra",
+    columnsTitle: "IdRestaurante,IdCliente,IdViaje,Subtotal,IVA,Total,CodigoQR,CalificacionRestaurante," +
+    "CalificacionTransporte,EstadoOrden,IdProducto,Reclamo,RespuestaReclamo",
+    ColumnsDataName: "IdRestaurante,IdCliente,IdViaje,Subtotal,IVA,Total,CodigoQR,CalificacionRestaurante," +
+    "CalificacionTransporte,EstadoOrden,IdProducto,Reclamo,RespuestaReclamo",
+    onSelectFunction: "BindFields", colorHeader:"red")
+
+
+<div class="card border-secondary" style="margin-top: 50px;">
+    <div class="card-header">
+        <div class="row pull-right">
+            <div class="col-md-8">Editar Usuario</div>
+            <div class="col-md-4">
+                @Html.CtrlButton(viewName: "vOrdenCompra", id: "btnCreate", label: "Save", onClickFunction: "Create", buttonType:"success")
+                @Html.CtrlButton(viewName: "vOrdenCompra", id: "btnUpdate", label: "Save changes", onClickFunction: "Update", buttonType: "info")
+                @Html.CtrlButton(viewName: "vOrdenCompra", id: "btnDelete", label: "Delete", onClickFunction: "Delete",buttonType: "danger")
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bs-component">
+                    <form id="frmEdition">
+                        @Html.CtrlInput(id: "txtCedula", type: "text", label: "IdRestaurante", columnDataName: "IdRestaurante")
+                        @Html.CtrlInput(id: "txtNombre", type: "text", label: "IdCliente", columnDataName: "IdCliente")
+                        @Html.CtrlInput(id: "txtApellidos", type: "text", label: "IdViaje", columnDataName: "IdViaje")
+                        @Html.CtrlInput(id: "txtProvincia", type: "text", label: "Subtotal", columnDataName: "Subtotal")
+                        @Html.CtrlInput(id: "txtCanton", type: "text", label: "IVA", columnDataName: "IVA")
+                        @Html.CtrlInput(id: "txtDistrito", type: "text", label: "Total", columnDataName: "Total")
+                        @Html.CtrlInput(id: "txtMapa", type: "text", label: "CodigoQR", columnDataName: "CodigoQR")
+                        @Html.CtrlInput(id: "txtTelefono", type: "text", label: "CalificacionRestaurante", columnDataName: "CalificacionRestaurante")
+                        @Html.CtrlInput(id: "txtEmail", type: "text", label: "CalificacionTransporte", columnDataName: "CalificacionTransporte")
+                        @Html.CtrlInput(id: "txtContrasena", type: "text", label: "EstadoOrden", columnDataName: "EstadoOrden")
+                        @Html.CtrlInput(id: "txtRol", type: "text", label: "IdProducto", columnDataName: "IdProducto")
+                        @Html.CtrlInput(id: "txtIdPaypal", type: "text", label: "Reclamo", columnDataName: "Reclamo")
+                        @Html.CtrlInput(id: "txtCodigoAsignado", type: "text", label: "RespuestaReclamo", columnDataName: "RespuestaReclamo")
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>

@@ -1,0 +1,35 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vBitacoras.js"></script>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.CtrlTable(viewName: "vBitacoras", id: "tblBitacoras", title: "Lista Bitacora", columnsTitle: "FechaHora,DescripcionCRUD,IdUsuario",
+                ColumnsDataName: "FechaHora,DescripcionCRUD,IdUsuario", onSelectFunction: "BindFields", colorHeader:"red")
+
+
+<div class="card border-secondary" style="margin-top: 50px;">
+    <div class="card-header">
+        <div class="row pull-right">
+            <div class="col-md-8">Editar Usuario</div>
+            <div class="col-md-4">
+                @Html.CtrlButton(viewName: "vBitacoras", id: "btnCreate", label: "Save", onClickFunction: "Create", buttonType:"success")
+                @Html.CtrlButton(viewName: "vBitacoras", id: "btnUpdate", label: "Save changes", onClickFunction: "Update", buttonType: "info")
+                @Html.CtrlButton(viewName: "vBitacoras", id: "btnDelete", label: "Delete", onClickFunction: "Delete",buttonType: "danger")
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bs-component">
+                    <form id="frmEdition">
+                        @Html.CtrlInput(id: "txtFechaHora", type: "text", label: "FechaHora", columnDataName: "FechaHora")
+                        @Html.CtrlInput(id: "txtDescripcionCRUD", type: "text", label: "DescripcionCRUD", columnDataName: "DescripcionCRUD")
+                        @Html.CtrlInput(id: "txtIdUsuario", type: "text", label: "IdUsuario", columnDataName: "IdUsuario")
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>

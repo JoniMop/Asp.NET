@@ -1,0 +1,92 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vHeader.js"></script>
+<script src="~/Scripts/Views/vBitacora.js"></script>
+<script src="~/Scripts/Views/logout.js"></script>
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <title>Bitacora</title>
+    <meta charset="utf-8">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/reset.css"> <!--reset style-->
+    <link rel="stylesheet" href="~/Content/css/commons.css">
+    <link rel="stylesheet" href="~/Content/css/bitacora.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="mainImage1">
+        <a href="/Home/Index"><img id="logo" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png"></a>
+        <a id="datosUsuario"></a>
+
+        <header id="header">
+
+            <ul id="menuDefault"></ul>
+            <ul id="menuComercio"></ul>
+            <ul id="menuTransportista"></ul>
+            <ul id="menuAdmin"></ul>
+            <ul id="menuCliente"></ul>
+
+            <!--menu cliente-->
+            <ul>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboardAdmin", label: "Mi Perfil", onClickFunction: "dashboardAdmin", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnBitacora", label: "Bitácora", onClickFunction: "Bitacora", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnPagos" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>
+                </li>
+                <li>
+                    <button id="logout" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+            </ul>
+        </header>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <section class="tablaContainer">
+        <h1>Bitácora</h1>   <br />
+
+        @Html.CtrlTable(viewName: "vBitacora", id: "tbBitacora", title: "Bitacora",
+                        columnsTitle: "Descripción,Fecha y Hora",
+                        ColumnsDataName: "DescripcionCRUD,FechaHora",
+                        onSelectFunction: "BindFields", colorHeader: "red")
+
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <footer id="footer">
+        <img id="logoFooter" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+        <img id="logoLemon" src="https://res.cloudinary.com/veromorera/image/upload/v1574303663/masterFood/logoPSW2-01.jpg">
+
+        <p>
+            MasterFood 2019 - Todos los derechos reservados.<br />
+            Creado por <a id="footerLanding" href="/Home/lemonCode"> LemonCode</a>
+        </p>
+    </footer>
+
+    <script src="~/Scripts/Views/secureLogin.js"></script>
+
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

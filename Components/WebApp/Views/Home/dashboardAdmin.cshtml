@@ -1,0 +1,233 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vHeader.js"></script>
+<script src="~/Scripts/Views/vReclamos.js"></script>
+<script src="~/Scripts/Views/vUsuarios.js"></script>
+<script src="~/Scripts/Views/vBitacora.js"></script>
+<script src="~/Scripts/Views/vMembresias.js"></script>
+<script src="~/Scripts/Views/logout.js"></script>
+
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Admin</title>
+    <meta charset="utf-8">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/reset.css"> <!--reset style-->
+    <link rel="stylesheet" href="~/Content/css/commons.css">
+    <link rel="stylesheet" href="~/Content/css/dashboardAdmin.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<body>
+    <div class="mainImage1">
+        <a href="/Home/Index"><img id="logo" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png"></a>
+        <a id="datosUsuario"></a>
+        <header id="header">
+
+            <ul id="menuDefault"></ul>
+            <ul id="menuComercio"></ul>
+            <ul id="menuTransportista"></ul>
+            <ul id="menuAdmin"></ul>
+            <ul id="menuCliente"></ul>
+            <!--menu cliente-->
+            <ul>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboardAdmin", label: "Mi Perfil", onClickFunction: "dashboardAdmin", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnBitacora", label: "Bitácora", onClickFunction: "Bitacora", buttonType: "success")
+                </li>
+                <li>
+                    <button id="BtnPagos" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>
+                </li>
+                <li>
+                    <button id="logout" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+            </ul>
+        </header>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <section class="membresias">
+        <br />
+        <h1>Membresías Pendientes</h1>
+        <div id=membresiasContainer>
+            <div id="cardMembresia" class="card">
+                <img id="cardImg" src="https://res.cloudinary.com/veromorera/image/upload/v1574193525/masterFood/logosRestaurantes/Mcdonalds.jpg" style="width: 100%">
+                <h3>McDonalds</h3>
+                <p>Lorem Ipsum</p>
+                <!--menu cliente <button id="BtnPagos2" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>-->
+                <button id="cardbuttonAprove" class="btn btn-success" data-toggle="modal" data-target="#MembresiaFill"><i class="fa fa-check-square"></i></button>
+                <button id="cardbuttonReject" class="btn btn-danger" onclick="rejectUser()"><i class="fa fa-window-close"></i></button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <section class="adverticingContainer">
+        <img id="anuncio" src="https://res.cloudinary.com/veromorera/image/upload/v1574608956/masterFood/adminAdvert.png">
+
+        <h2 id="textDecoForm">
+            ¡Gestione sus ganancias <br />
+            y deposítelas en su <br />
+            cuenta PayPal!<br />
+
+            <button id="BtnPagos2" type="button" class="btn btn-danger" data-toggle="modal" data-target="#pagoDesgloce">Mis Pagos</button>
+
+        </h2>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <section class="tablaContainer">
+        <h1>Afiliaciones</h1>   <br />
+        <h3>Comercio, transportistas, clientes</h3>
+
+        @Html.CtrlTable(viewName: "vUsuarios", id: "tbUsuario", title: "Usuarios Afiliados",
+                        columnsTitle: "Cédula,Nombre,Apellidos,Provincia,Cantón,Distrito,Teléfono,Email,Rol",
+                        ColumnsDataName: "Cedula,Nombre,Apellidos,Provincia,Canton,Distrito,Telefono,Email,Rol",
+                        onSelectFunction: "BindFields", colorHeader: "red")
+
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <section class="balanceContainer">
+        <br />
+        <h1>Balance de Ganancias</h1>   <br />
+
+
+
+    </section>
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <section class="tablaContainer">
+        <h1>Reclamos</h1>
+
+        @Html.CtrlTable(viewName: "vReclamos", id: "tbOrdenCompra", title: "Lista Reclamo", columnsTitle: "Reclamo, Respuesta al Reclamo",
+                ColumnsDataName: "Reclamo,RespuestaReclamo", onSelectFunction: "BindFields", colorHeader: "red")
+
+    </section>
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <footer id="footer">
+        <img id="logoFooter" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+        <img id="logoLemon" src="https://res.cloudinary.com/veromorera/image/upload/v1574303663/masterFood/logoPSW2-01.jpg">
+
+        <p>
+            MasterFood 2019 - Todos los derechos reservados.<br />
+            Creado por <a id="footerLanding" href="/Home/lemonCode"> LemonCode</a>
+        </p>
+    </footer>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- The Modal Pagos a Paypal-->
+    <div class="modal fade" id="pagoDesgloce">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+                    <img id="logoModal2" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+                    <br>
+
+                    <h4 class="modal-title2">Desgloce de Ganancias</h4>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="tablaContainer2">
+                        @Html.CtrlTable(viewName: "vTransaccion", id: "tbTransaccion", title: "Desgloce de Ganancias",
+                            columnsTitle: "Crédito,Detalle,Fecha",
+                            ColumnsDataName: "Credito,Detalle,Fecha",
+                            onSelectFunction: "BindFields", colorHeader: "red")
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    @Html.CtrlButton(viewName: "vTransaccion", id: "btnPagoPaypal", label: "Enviar dinero a PayPal", onClickFunction: "PagoPaypal", buttonType: "success")
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- The Modal Membresias-->
+    <div class="modal fade" id="MembresiaFill">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+                    <img id="logoModal2" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+                    <br>
+
+                    <h4 class="modal-title2">Registro de Membresía</h4>
+                </div>
+                <!---------------------------------------------------------------------------------------------------------------------->
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="tablaContainer2">
+                        <form id="frmEdition">
+                            <div class="left-frm">
+                                @Html.CtrlInput(id: "Id del Usuario", type: "number", label: "Cédula del Usuario", columnDataName: "IdUsuario")
+                                @Html.CtrlInput(id: "MontoMembresiaAnual", type: "number", label: "Monto del pago Anual", columnDataName: "MontoMembresiaAnual")
+                                @Html.CtrlInput(id: "Estado", type: "text", label: "Estado", columnDataName: "Estado")
+
+                            </div>
+
+                        </form>
+
+
+                        @Html.CtrlTable(viewName: "vMembresias", id: "tblMembresias", title: "Membresias registradas",
+                            columnsTitle: "IdUsuario,Monto del pago Anual,Estado",
+                            ColumnsDataName: "IdUsuario,MontoMembresiaAnual,Estado",
+                            onSelectFunction: "BindFields", colorHeader: "red")
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    @Html.CtrlButton(viewName: "vMembresias", id: "btnRegistrar", label: "Registrar", onClickFunction: "CreateAndMail", buttonType: "success")
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @* PRIVACIDAD DEL LOGIN  *@
+    <script src="~/Scripts/Views/secureLogin.js"></script>
+
+    <script src="~/Scripts/Views/vAdmin.js"></script>
+
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

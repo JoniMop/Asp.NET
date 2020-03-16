@@ -1,0 +1,235 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vHeader.js"></script>
+<script src="~/Scripts/Views/vPagos.js"></script>
+<script src="~/Scripts/Views/vOrdenCompra.js"></script>
+<script src="~/Scripts/Views/vTransaccion.js"></script>
+<script src="~/Scripts/Views/logout.js"></script>
+
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Cliente</title>
+    <meta charset="utf-8">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/reset.css"> <!--reset style-->
+    <link rel="stylesheet" href="~/Content/css/commons.css">
+    <link rel="stylesheet" href="~/Content/css/dashboardCliente.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<body>
+    <div class="mainImage1">
+        <a href="/Home/Index"><img id="logo" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png"></a>
+        <a id="datosUsuario"></a>
+
+        <header id="header">
+
+            <ul id="menuDefault"></ul>
+            <ul id="menuComercio"></ul>
+            <ul id="menuTransportista"></ul>
+            <ul id="menuAdmin"></ul>
+            <ul id="menuCliente"></ul>
+            <!--menu cliente-->
+            <ul>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnDashboard", label: "Mi Perfil", onClickFunction: "Dashboard", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnWallet", label: "Wallet Cash", onClickFunction: "Wallet", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnReclamos", label: "Reclamos", onClickFunction: "Reclamos", buttonType: "success")
+                </li>
+                <li>
+                    @Html.CtrlButton(viewName: "vHeader", id: "btnOrdenes", label: "Mis Ordenes", onClickFunction: "Ordenes", buttonType: "danger")
+                </li>
+                <li>
+                    <button id="logout" class="btn btn-success"><i class="fa fa-sign-out fa-lg"></i></button>
+                </li>
+            </ul>
+        </header>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <section class="botInstructions">
+
+        <img class="imgBotInstructions" src="https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/Web_1920_2.png">
+
+        <h3 id="botTextInstructions">
+            Puede seguir el proceso de su pedido
+            <br> a continuación
+            <br>¿Algo salió mal? Realice su reclamo <a href="/Home/reclamos">AQUI</a>
+        </h3>
+
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <section class="options">
+
+        <h1 id="Instruciones">Estado de su Orden</h1>
+
+        <div id="infoImg1">
+            <img class="imgInstrucciones" src="https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/estadosOrdenes/cliente1_trans1_bw.png">
+            <p class="Instruciones">Confirmando pedido con el restaurante...</p>
+        </div>
+
+        <div id="infoImg2">
+            <img class="imgInstrucciones" src="https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/estadosOrdenes/cliente2_bw.png">
+            <p class="Instruciones">El restaurante está preparando el pedido</p>
+        </div>
+
+        <div id="infoImg3">
+            <img class="imgInstrucciones" src="https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/estadosOrdenes/cliente3_rest3_bw.png">
+            <p class="Instruciones">El pedido se entregó al transportista</p>
+        </div>
+        <div id="infoImg4">
+            <img class="imgInstrucciones" src="https://res.cloudinary.com/veromorera/image/upload/v1573498966/masterFood/estadosOrdenes/cliente4_trans3_bw.png">
+            <p class="Instruciones">El transportista está en camino...</p>
+        </div>
+        <div id="infoImg5">
+            <img class="imgInstrucciones" src="https://res.cloudinary.com/veromorera/image/upload/v1573498966/masterFood/estadosOrdenes/cliente5_trans4_bw.png">
+            <p class="Instruciones">¡El pedido fue entregado a su persona!</p>
+        </div>
+
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <section class="tablaContainer">
+        <h1>Historial de Pedidos</h1>
+        <br />
+
+        @Html.CtrlTable(viewName: "vOrdenCompra", id: "tbOrdenCompra", title: "Lista Reclamo", columnsTitle: "Restaurante,Pago Total,Estado de la Orden",
+                ColumnsDataName: "NombreComercial,Total,EstadoOrden", onSelectFunction: "BindFields", colorHeader: "red")
+
+    </section>
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <section class="adverticingContainer">
+        <img src="	https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/dashboardCliente.jpg">
+
+        <h2 id="textDecoForm">
+            ¡Ahorre un 10% en
+            <br>cada compra con
+            <br>nuestro servicio de
+            <br>Cash Wallet!
+        </h2>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <footer id="footer">
+        <img id="logoFooter" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+        <img id="logoLemon" src="https://res.cloudinary.com/veromorera/image/upload/v1574303663/masterFood/logoPSW2-01.jpg">
+
+        <p>
+            MasterFood 2019 - Todos los derechos reservados.<br />
+            Creado por <a id="footerLanding" href="/Home/lemonCode"> LemonCode</a>
+        </p>
+    </footer>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- The Modal carrito de compras-->
+    <div class="modal fade" id="carrito">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+
+
+                    <img id="logoModal" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+                    <br>
+
+                    <h3 class="modal-title"> Resumen de su Orden</h3>
+
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    @Html.CtrlTable(viewName: "vOrdenCompra", id: "tbOrdenCompra", title: "Orden de compra",
+    columnsTitle: "NombreComercial,Subtotal,IVA,Total,CodigoQR,EstadoOrden",
+    ColumnsDataName: "NombreComercial,Subtotal,IVA,Total,CodigoQR,EstadoOrden",
+    onSelectFunction: "BindFields", colorHeader: "red")
+                </div>
+
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    <p>
+                        Elija su método de pago:
+                    </p>
+                    <br />
+                    @Html.CtrlButton(viewName: "vTransaccion", id: "btnPagoPaypal", label: "Pagar con Paypal", onClickFunction: "RedirigirPaypal", buttonType: "success")
+                    @Html.CtrlButton(viewName: "vTransaccion", id: "btnPagoWallet", label: "Pagar con Wallet", onClickFunction: "RedirigirWallet", buttonType: "danger")
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- The Modal calificaciones-->
+    <div class="modal fade" id="calificaciones">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+
+
+                    <img id="logoModal" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+                    <br>
+
+                    <h3 class="modal-title"> Califique nuestros servicios</h3>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <ul class="list-inline rating-list">
+                        <li><i class="fa fa-star yellow"></i></li>
+                        <li><i class="fa fa-star yellow"></i></li>
+                        <li><i class="fa fa-star yellow"></i></li>
+                        <li><i class="fa fa-star yellow"></i></li>
+                        <li><i class="fa fa-star gray"></i></li>
+                    </ul>
+                </div>
+
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    <button id="Btnclose" type="button" class="btn btn-success" data-dismiss="modal">Finalizar<button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    @* PRIVACIDAD DEL LOGIN *@
+    <script src="~/Scripts/Views/secureLogin.js"></script>
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

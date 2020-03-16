@@ -1,0 +1,40 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vRestaurantes.js"></script>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.CtrlTable(viewName: "vRestaurantes", id: "tblRestaurantes", title: "Lista Restaurantes",
+    columnsTitle: "CedulaJuridica,NombreComercial,IdEncargado,HorarioOpen,HorarioClose,Categoria",
+    ColumnsDataName: "CedulaJuridica,NombreComercial,IdEncargado,HorarioOpen,HorarioClose,Categoria", 
+    onSelectFunction: "BindFields", colorHeader:"red")
+
+
+<div class="card border-secondary" style="margin-top: 50px;">
+    <div class="card-header">
+        <div class="row pull-right">
+            <div class="col-md-8">Editar Usuario</div>
+            <div class="col-md-4">
+                @Html.CtrlButton(viewName: "vRestaurantes", id: "btnCreate", label: "Save", onClickFunction: "Create", buttonType:"success")
+                @Html.CtrlButton(viewName: "vRestaurantes", id: "btnUpdate", label: "Save changes", onClickFunction: "Update", buttonType: "info")
+                @Html.CtrlButton(viewName: "vRestaurantes", id: "btnDelete", label: "Delete", onClickFunction: "Delete",buttonType: "danger")
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bs-component">
+                    <form id="frmEdition">
+                        @Html.CtrlInput(id: "txtCedula", type: "text", label: "CedulaJuridica", columnDataName: "CedulaJuridica")
+                        @Html.CtrlInput(id: "txtNombre", type: "text", label: "NombreComercial", columnDataName: "NombreComercial")
+                        @Html.CtrlInput(id: "txtApellidos", type: "text", label: "IdEncargado", columnDataName: "IdEncargado")
+                        @Html.CtrlInput(id: "txtProvincia", type: "text", label: "HorarioOpen", columnDataName: "HorarioOpen")
+                        @Html.CtrlInput(id: "txtCanton", type: "text", label: "HorarioClose", columnDataName: "HorarioClose")
+                        @Html.CtrlInput(id: "txtDistrito", type: "text", label: "Categoria", columnDataName: "Categoria")
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>

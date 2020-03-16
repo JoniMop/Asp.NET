@@ -1,0 +1,121 @@
+
+/*---------------------------header-----------------------------*/
+#header {
+    position: absolute;
+    margin-left: 63%;
+    margin-top: 25px;
+}
+
+.menu {
+    text-decoration: none;
+    display: none;
+}
+
+
+#logo {
+    position: absolute;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 2px 2px;
+}
+
+
+
+/*--------------------------images----------------------------*/
+
+
+.mainImage1 {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    max-height: 1000px;
+    background-color: #272727;
+    padding-bottom: 100px;
+}
+
+
+
+img {
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+
+
+
+/*--------------------------texto sobre imagen----------------------------*/
+
+
+.textoSobreImagen {
+    padding: 150% 5%;
+}
+
+    .textoSobreImagen > p {
+        color: #f5f0ed;
+        font-family: "Open Sans";
+        font-size: 16px;
+    }
+
+li {
+    float: left;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #f5f0ed;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+
+/*--------------------------secciones----------------------------*/
+.botInstructions {
+    height: 200px;
+}
+
+#botTextInstructions {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    margin-top: -140px;
+    padding-left: 730px;
+}
+
+.imgBotInstructions {
+    padding: 20px;
+    max-height: 700px;
+    max-width: 700px;
+    margin-left: 30%;
+}
+
+.reclamoContainer {
+    min-height: 300px;
+    margin: 0px 500px;
+}
+
+#Instruciones {
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.tablaContainer {
+    padding: 60px;
+    min-width: 400px;
+    min-height: 550px;
+}
+
+textarea {
+    margin-top: 50px;
+}
+form {
+    margin-left: 150px;
+}

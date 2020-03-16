@@ -1,0 +1,220 @@
+
+/*---------------------------header-----------------------------*/
+#header {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 25px;
+}
+
+.menu {
+    text-decoration: none;
+    display: none;
+}
+
+
+#logo {
+    position: absolute;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 2px 2px;
+}
+
+#BtnPagos{
+    margin: 0px 5px;
+}
+/*--------------------------images----------------------------*/
+.mainImage1 {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    max-height: 1000px;
+    background-color: #272727;
+    padding-bottom: 100px;
+}
+
+
+
+img {
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+
+
+
+/*--------------------------texto sobre imagen----------------------------*/
+
+
+.textoSobreImagen {
+    padding: 150% 5%;
+}
+
+    .textoSobreImagen > p {
+        color: #f5f0ed;
+        font-family: "Open Sans";
+        font-size: 16px;
+    }
+
+li {
+    float: left;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #f5f0ed;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+.boton {
+    border-style: solid;
+    border-color: #fff;
+    border-width: 3px;
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #f5f0ed;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+/*--------------------------secciones----------------------------*/
+.botInstructions {
+    height: 200px;
+}
+
+#botTextInstructions {
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+    position: absolute;
+    margin-top: -155px;
+    padding-left: 660px;
+}
+
+.imgBotInstructions {
+    padding: 20px;
+    max-height: 750px;
+    max-width: 750px;
+    margin-left: 27%;
+}
+
+.options {
+    height: 450px;
+    background-color: #F2B705;
+}
+
+.imgInstrucciones {
+    position: absolute;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.infoImg {
+    text-align: center;
+}
+
+.Instruciones {
+    position: absolute;
+    color: black;
+    margin-top: 18%;
+    margin-left: 100px;
+}
+
+#Instruciones {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 41%;
+}
+
+
+/*--------------------------table----------------------------*/
+.tablaContainer {
+    padding: 60px;
+    min-width: 400px;
+    min-height: 730px;
+}
+
+/*--------------------------adverticing----------------------------*/
+.adverticingContainer {
+    max-height: 520px;
+}
+
+#textDecoForm {
+    color: #fff;
+    text-shadow: 4px 4px 3px #272727;
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    margin-top: -460px;
+    padding-left: 150px;
+}
+/*--------------------------balance----------------------------*/
+
+.BalanceGraph {
+    padding: 100px;
+    min-height: 700px;
+}
+
+/*--------------------------main order buttons----------------------------*/
+
+
+.bouton-image:before {
+    content: "";
+    width: 310px;
+    height: 310px;
+    display: block;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 35px;
+    text-align: center;
+}
+
+
+#paso1, #paso2, #paso3 {
+    text-shadow: none;
+    margin-left: 110px;
+    font-size: 16px;
+    margin-top: 35px;
+}
+
+
+#paso1 {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/estadosOrdenes/rest1_trans2_bw.png);
+}
+
+
+    #paso1:focus {
+        background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/estadosOrdenes/rest1_trans2.png);
+        outline: 0;
+        box-shadow: none !important;
+    }
+
+#paso2 {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/estadosOrdenes/rest2_bw.png);
+}
+
+    #paso2:focus {
+        background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/estadosOrdenes/rest2.png);
+        outline: 0;
+        box-shadow: none !important;
+    }
+
+#paso3 {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/estadosOrdenes/cliente3_rest3_bw.png);
+}
+
+    #paso3:focus {
+        background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1573498965/masterFood/estadosOrdenes/cliente3_rest3.png);
+        outline: 0;
+        box-shadow: none !important;
+    }

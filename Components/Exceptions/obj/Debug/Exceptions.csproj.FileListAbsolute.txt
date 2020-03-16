@@ -1,0 +1,110 @@
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\bin\Debug\Exceptions.dll
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\bin\Debug\DataAcess.dll
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\bin\Debug\Entities-POJO.dll
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\bin\Debug\DataAcess.pdb
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\bin\Debug\Entities-POJO.pdb
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\obj\Debug\Exceptions.csproj.CopyComplete
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\obj\Debug\Exceptions.dll
+C:\Users\dcordoba.SSVMN\Documents\Visual Studio 2017\Projects\cenfo_proyecto_2_2018\API\Components\Exceptions\obj\Debug\Exceptions.pdb
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\bin\Debug\Exceptions.dll
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\bin\Debug\DataAcess.dll
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\bin\Debug\Entities-POJO.dll
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\bin\Debug\DataAcess.pdb
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\bin\Debug\Entities-POJO.pdb
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\obj\Debug\Exceptions.csproj.CopyComplete
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\obj\Debug\Exceptions.dll
+C:\Users\Developer\Documents\repos\CENFO_IPS201901\cenfo_proyecto_2_2019_01\Capa API\Components\Exceptions\obj\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\obj\Debug\Exceptions.csproj.CopyComplete
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\obj\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Documents\GitHub\cenfo_proyecto_2_2019\Capa API\Components\Exceptions\obj\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\obj\Debug\Exceptions.csproj.CopyComplete
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\obj\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem6\__entregables\MoreraVeronica_laboratorio3\Lab3_Capa API\Components\Exceptions\obj\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\obj\Debug\Exceptions.csproj.CopyComplete
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\obj\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Documents\CENFOTEC\PISW-2\sem7\__entregables\MoreraVeronica_lab4\Capa WEB\Components\Exceptions\obj\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\obj\Debug\Exceptions.csproj.CopyComplete
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\obj\Debug\Exceptions.dll
+C:\Users\Veronica Morera\Source\Repos\MasterFoodApp\Components\Exceptions\obj\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\obj\Debug\Exceptions.csproj.CopyComplete
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\obj\Debug\Exceptions.dll
+C:\Users\Veronica Morera\source\repos\MasterFood_PlanB\Components\Exceptions\obj\Debug\Exceptions.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\bin\Debug\Exceptions.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\bin\Debug\DataAcess.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\bin\Debug\Entities-POJO.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\bin\Debug\DataAcess.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\bin\Debug\Entities-POJO.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\obj\Debug\Exceptions.csproj.CopyComplete
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\obj\Debug\Exceptions.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB\Components\Exceptions\obj\Debug\Exceptions.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\bin\Debug\Exceptions.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\bin\Debug\DataAcess.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\bin\Debug\Entities-POJO.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\bin\Debug\DataAcess.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\bin\Debug\Entities-POJO.pdb
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\obj\Debug\Exceptions.csproj.CopyComplete
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\obj\Debug\Exceptions.dll
+C:\Users\GMachado\Desktop\Ucenfotec\proyecto_invest_2\MasterFood_planB_4\Components\Exceptions\obj\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\bin\Debug\Exceptions.dll
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\bin\Debug\DataAcess.dll
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\bin\Debug\Entities-POJO.dll
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\bin\Debug\DataAcess.pdb
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\bin\Debug\Entities-POJO.pdb
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\obj\Debug\Exceptions.csproj.CopyComplete
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\obj\Debug\Exceptions.dll
+C:\Users\Veronica Morera\source\repos\___respaldo\MasterFood_planB_dic1\Components\Exceptions\obj\Debug\Exceptions.pdb

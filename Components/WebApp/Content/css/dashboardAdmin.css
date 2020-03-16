@@ -1,0 +1,224 @@
+
+/*---------------------------header-----------------------------*/
+#header {
+    position: absolute;
+    margin-left: 74%;
+    margin-top: 25px;
+}
+
+.menu {
+    text-decoration: none;
+    display: none;
+}
+
+
+#logo {
+    position: absolute;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 2px 2px;
+}
+
+#BtnPagos {
+    margin: 0px 6px;
+}
+
+
+/*--------------------------images----------------------------*/
+
+
+.mainImage1 {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    max-height: 1000px;
+    background-color: #272727;
+    padding-bottom: 100px;
+}
+
+
+
+img {
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+/*--------------------------texto sobre imagen----------------------------*/
+
+
+.textoSobreImagen {
+    padding: 150% 5%;
+}
+
+    .textoSobreImagen > p {
+        color: #f5f0ed;
+        font-family: "Open Sans";
+        font-size: 16px;
+    }
+
+li {
+    float: left;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #f5f0ed;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+/*--------------------------secciones----------------------------*/
+
+
+.membresias {
+    height: 600px;
+}
+
+.imgInstrucciones {
+    position: absolute;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.infoImg {
+    max-width: 200px;
+    display: inline-block;
+    text-align: center;
+    margin: 60px 100px;
+    padding: 10px 20px;
+}
+
+.Instruciones {
+    position: absolute;
+    color: black;
+    margin-top: 18%;
+    margin-left: 100px;
+}
+
+#Instruciones {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 41%;
+}
+
+#membresiasContainer {
+    background-color: #F2B705;
+    height: 400px;
+    padding: 20px;
+    overflow-y: scroll;
+    margin: 20px 350px;
+}
+
+
+/*--------------------------table----------------------------*/
+.tablaContainer {
+    padding: 60px;
+    min-width: 600px;
+    min-height: 800px;
+}
+
+/*--------------------------adverticing----------------------------*/
+.adverticingContainer {
+    max-height: 520px;
+}
+
+#anuncio {
+    max-height: 520px;
+}
+
+#textDecoForm {
+    color: #fff;
+    text-shadow: 4px 4px 3px #272727;
+    font-size: 57px;
+    text-align: center;
+    position: absolute;
+    margin-top: -390px;
+    padding-left: 70px;
+}
+
+#BtnPagos2 {
+    margin-top: 40px;
+    padding: 10px 50px;
+    font-size: 18px;
+    text-shadow: 2px 2px 3px #303030;
+}
+/*--------------------------graficos----------------------------*/
+.balanceContainer {
+    background-color: #F2B705;
+    min-height: 500px;
+}
+
+/*--------------------------cards productos----------------------------*/
+#cardMembresia {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    max-height: 350px;
+    margin: 15px;
+    margin-left: 28px;
+    text-align: center;
+    font-family: arial;
+    display: inline-block;
+    float: left;
+}
+
+#cardImg {
+    max-height: 150px;
+    max-width: 150px;
+    padding: 10px
+}
+
+#cardbuttonReject, #cardbuttonAprove {
+    width: 80%;
+    float: left;
+    margin: 5px 15px;
+}
+
+
+
+/*--------------------------modales----------------------------*/
+
+
+#logoModal {
+    border-radius: 20px;
+    margin-left: 183px;
+    max-height: 100px;
+    max-width: 100px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.modal-title {
+    font-family: "Roboto Condensed", sans-serif;
+    position: absolute;
+    margin: 120px 145px;
+    font-size: 22px
+}
+
+
+#logoModal2 {
+    border-radius: 20px;
+    margin-left: 330px;
+    max-height: 100px;
+    max-width: 100px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.modal-title2 {
+    font-family: "Roboto Condensed", sans-serif;
+    position: absolute;
+    margin: 120px 265px;
+    font-size: 22px
+}

@@ -1,0 +1,124 @@
+
+/*---------------------------header-----------------------------*/
+#header{
+	position: absolute;
+	margin-left: 63%;
+	margin-top: 25px;
+}
+
+.menu{
+	text-decoration: none;
+	display: none;
+}
+
+
+
+#logo{
+	position: absolute;
+	width: auto;
+	float: left;
+	border-radius: 10px;
+	max-width: 70px;
+	max-height: 70px;
+	margin: 2px 2px;
+}
+
+
+/*--------------------------images----------------------------*/
+
+
+.mainImage1{
+    background-size: cover;
+   	background-position: center;
+    padding: 20px;
+    text-align: center;
+    max-height: 1000px;
+    background-color: #272727;
+    padding-bottom: 100px;
+
+}
+
+
+
+img{
+	background-size: cover;
+	width: 100%;
+    display: block;
+}
+
+
+
+/*--------------------------texto sobre imagen----------------------------*/
+
+
+.textoSobreImagen {
+    padding: 150% 5%;
+}
+
+    .textoSobreImagen > p {
+        color: #f5f0ed;
+        font-family: "Open Sans";
+        font-size: 16px;
+    }
+
+li {
+    float: left;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #f5f0ed;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+/*--------------------------  containers  ------------------------------*/
+.pagosContainer{
+margin: 50px 200px;
+}
+#imagenPagos{
+	width: 50%;
+	display: inline-block;
+	border-radius: 20px;
+}
+#paypal{
+	width: 50%;
+	float: right;	
+	background-color: gray;
+	min-height: 550px;
+}
+
+/*--------------------------texto sobre imagen----------------------------*/
+
+
+.boton{
+    border-style: solid;
+    border-color: #fff;
+   	border-width: 3px;
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #f5f0ed;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+/*--------------------------secciones----------------------------*/
+
+#Instruciones{
+	position: absolute;
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+
+.tablaContainer{
+	padding: 60px;
+	min-width: 400px;
+	min-height: 730px;
+
+}
+

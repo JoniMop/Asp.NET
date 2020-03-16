@@ -1,0 +1,123 @@
+﻿@using WebApp.Helpers;
+<script src="~/Scripts/Views/vHeader.js"></script>
+<script src="~/Scripts/Views/vBitacora.js"></script>
+<script src="~/Scripts/Views/vClientes.js"></script>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrar Cliente</title>
+    <meta charset="utf-8">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/css/reset.css"> <!--reset style-->
+    <link rel="stylesheet" href="~/Content/css/commons.css">
+    <link rel="stylesheet" href="~/Content/css/formCliente.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="mainImage1">
+        <a href="/Home/Index"><img id="logo" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png"></a>
+
+
+        <div class="formContainer">
+            <div class="form">
+
+                <h2 id="encabezadoForm">Registrarse como Cliente</h2>
+                <form id="frmEdition">
+                    <div class="left-frm">
+                        @Html.CtrlInput(id: "txtCedula", type: "text", label: "Cédula", columnDataName: "Cedula")
+                        @Html.CtrlInput(id: "txtNombre", type: "text", label: "Nombre", columnDataName: "Nombre")
+                        @Html.CtrlInput(id: "txtApellidos", type: "text", label: "Apellidos", columnDataName: "Apellidos")
+                        @Html.CtrlInput(id: "txtProvincia", type: "text", label: "Provincia", columnDataName: "Provincia")
+                        @Html.CtrlInput(id: "txtCanton", type: "text", label: "Cantón", columnDataName: "Canton")
+                        @Html.CtrlInput(id: "txtDistrito", type: "text", label: "Distrito", columnDataName: "Distrito")
+                    </div>
+                    <div class="right-frm">
+                        <!--Hidden-->@Html.CtrlInput(id: "txtMapa", type: "text", label: "", columnDataName: "Mapa")
+                        @Html.CtrlInput(id: "txtTelefono", type: "number", label: "Teléfono", columnDataName: "Telefono")
+                        @Html.CtrlInput(id: "txtEmail", type: "email", label: "Email", columnDataName: "Email")
+                        @Html.CtrlInput(id: "txtContrasena", type: "password", label: "Contraseña", columnDataName: "Contrasena")
+                        @Html.CtrlInput(id: "txtIdPaypal", type: "text", label: "Id de PayPal", columnDataName: "IdPaypal")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtRol", type: "text", label: "", columnDataName: "Rol")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtCodigoAsignado", type: "text", label: "", columnDataName: "CodigoAsignado")
+                        <!--Hidden-->@Html.CtrlInput(id: "txtCodigoVerificacion", type: "text", label: "", columnDataName: "CodigoVerificacion")
+                    </div>
+                </form>
+                @Html.CtrlButton(viewName: "vClientes", id: "btnRegistrar", label: "Registrar", onClickFunction: "Create", buttonType: "success")
+
+            </div>
+
+        </div>
+        <h2 id="textDecoForm">
+            ¡A la puerta
+            <br>de su casa!
+
+        </h2>
+    </div>
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <footer id="footer">
+        <img id="logoFooter" src="https://res.cloudinary.com/veromorera/image/upload/v1573498967/masterFood/logo.png">
+        <img id="logoLemon" src="https://res.cloudinary.com/veromorera/image/upload/v1574303663/masterFood/logoPSW2-01.jpg">
+
+        <p>
+            MasterFood 2019 - Todos los derechos reservados.<br />
+            Creado por <a id="footerLanding" href="/Home/lemonCode"> LemonCode</a>
+        </p>
+    </footer>
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!--USAR SWEET ALERT-->
+    <!-- The Modal informe activacion-->
+    <div class="modal fade" id="codigoVerif">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" id="ModalContent">
+
+                <!-- Modal Header -->
+                <div class="modal-header Inicolor" id="HeaderModal">
+                    <h5>
+                        ¡Registro Exitoso!
+
+                    </h5>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>El registro se realizó de manera exitosa, le enviamos un correo electrónico con un código de activación</p>
+                </div>
+
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    <button id="BtnLogin" type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

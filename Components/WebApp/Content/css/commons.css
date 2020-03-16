@@ -1,0 +1,123 @@
+
+/*--------------------------roboto google----------------------------*/
+*{
+	box-sizing: border-box;
+}
+
+h1 { 
+	font-family: "Roboto Condensed", sans-serif; 
+	font-size: 32px; 
+	font-weight: 800; 
+	text-align: center;
+} 
+
+h2 { 
+	font-family: "Roboto Condensed"; 
+	font-size: 28px; 
+	font-weight: 800; 
+	line-height: 28px;
+} 
+
+h3 { 
+	font-family: "Roboto";
+	font-size: 26px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 40px; 
+ } 
+
+
+ p {
+ 	font-family: "Roboto";
+ 	font-size: 16px;
+	line-height: 1.5;
+ }
+
+
+/*--------------------------header----------------------------*/
+#logout {
+    margin-left: 5px;
+}
+.btn {
+    font-family: "Roboto Regular", sans-serif;
+    text-shadow: 2px 1px 3px #0b0b0b;
+}
+
+
+/*--------------------------footer----------------------------*/
+#footer {
+    min-height: 100px;
+    padding: 15px;
+    background-color: #241d1b;
+    display: block;
+}
+
+#footer > p {
+    margin-top: 25px;
+    color: #f5f0ed;
+    font-size: 16px;
+}
+
+#logoFooter {
+    filter: grayscale(100%);
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 10px;
+    display: inline-block;
+    float: left;
+}
+
+#logoLemon {
+    filter: grayscale(100%);
+    min-height: 60px;
+    max-width: 100px;
+    border-radius: 10px;
+    float: left;
+    margin: 15px 30px
+}
+
+#footerLanding {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.hide{
+    display: none;
+    visibility: hidden;
+}
+
+.show{
+    display:block;
+    visibility: visible;
+}
+
+
+#datosUsuario {
+    font-family: "Roboto Condensed";
+    color: #fff;
+    float: right;
+    margin-top: -10px;
+    margin-left: 100px;
+}
+
+/*ajuste de headers mixtos*/
+
+.menuTransportistaFix {
+    margin-left: 70px;
+}
+
+.menuComercioFix {
+    margin-left: 85px;
+}
+
+
+.menuAdminFix {
+    margin-left: 132px;
+}
+
+#logout, #logoutCom, #logoutTrans, #logoutAdmin, #BtnPagos, #BtnPagosTrans, #BtnPagosAdmin, #BtnLogin {
+    margin: 0px 5px 0px 5px;
+}

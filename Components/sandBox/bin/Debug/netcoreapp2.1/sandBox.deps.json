@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "sandBox/1.0.0": {
+        "dependencies": {
+          "DataAcess": "1.0.0",
+          "Entities-POJO": "1.0.0",
+          "Exceptions": "1.0.0"
+        },
+        "runtime": {
+          "sandBox.dll": {}
+        }
+      },
+      "DataAcess/1.0.0": {
+        "dependencies": {
+          "Entities-POJO": "1.0.0"
+        },
+        "runtime": {
+          "DataAcess.dll": {}
+        }
+      },
+      "Entities-POJO/1.0.0": {
+        "runtime": {
+          "Entities-POJO.dll": {}
+        }
+      },
+      "Exceptions/1.0.0": {
+        "dependencies": {
+          "DataAcess": "1.0.0",
+          "Entities-POJO": "1.0.0"
+        },
+        "runtime": {
+          "Exceptions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sandBox/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataAcess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entities-POJO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Exceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

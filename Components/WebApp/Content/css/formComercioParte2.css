@@ -1,0 +1,145 @@
+
+
+/*---------------------------header-----------------------------*/
+#header {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 25px;
+}
+
+.menu {
+    text-decoration: none;
+    display: none;
+}
+
+
+
+#logo {
+    position: absolute;
+    width: auto;
+    float: left;
+    border-radius: 10px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: 2px 2px;
+}
+
+
+/*--------------------------images----------------------------*/
+
+
+.mainImage1 {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    max-height: 1700px;
+    background-color: #272727;
+}
+
+
+
+img {
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+
+
+/*---------------------------   form     ------------------------------*/
+.formContainer {
+    background-image: url(https://res.cloudinary.com/veromorera/image/upload/v1576613672/masterFood/pexels-photo-225228.jpg);
+    max-width: 1270px;
+    height: 660px;
+    background-size: contain;
+    margin: 80px 0px 0px 100px;
+    border-radius: 20px;
+}
+
+.form {
+    min-width: 560px;
+    height: 620px;
+    position: absolute;
+    background-color: #fff;
+    margin: 20px 0px 0px 690px;
+    border-radius: 10px;
+}
+
+#textDecoForm {
+    color: #fff;
+    text-shadow: 4px 4px 3px #272727;
+    margin-top: 28%;
+    margin-left: 22%;
+    font-size: 60px;
+    text-align: right;
+    position: absolute;
+}
+
+#encabezadoForm {
+    padding-top: 20px;
+    font-family: "Roboto";
+    font-size: 30px;
+}
+
+
+
+.frm {
+    margin: 30px 50px;
+    text-align: left;
+    font-family: "Roboto";
+    font-size: 13px
+}
+
+#btnRegistrar {
+    width: 200px;
+    margin-top: 30px;
+}
+
+
+/*--------------------------texto sobre imagen----------------------------*/
+
+
+.textoSobreImagen {
+    padding: 150% 5%;
+}
+
+    .textoSobreImagen > p {
+        color: #f5f0ed;
+        font-family: "Open Sans";
+        font-size: 16px;
+    }
+
+li {
+    float: left;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+a {
+    color: #f5f0ed;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+
+/*------------------formularios------------------*/
+
+
+#txtCategoriaTemp, #txtIdUsuarioRest {
+    display: none;
+    visibility: hidden;
+}
+
+
+
+#txtCategoria {
+    min-width: 460px;
+    padding: 7px;
+    border-radius: 5px;
+    border-color: lightgray;
+}
+
+#dropdownCat {
+    margin-top: -60px;
+}
